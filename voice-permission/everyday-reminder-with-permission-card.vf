@@ -1,0 +1,1624 @@
+{
+  "_version": "1.0",
+  "project": {
+    "_id": "5d5ff7761bc4c420c211d742",
+    "name": "毎日リマインダー",
+    "creatorID": 405,
+    "teamID": "PGE9oXYjY3",
+    "platformData": {
+      "products": {}
+    },
+    "members": [],
+    "devVersion": "5d5ff7761bc4c420c211d72e",
+    "privacy": "public",
+    "platform": "alexa",
+    "linkType": "STRAIGHT"
+  },
+  "version": {
+    "_id": "5d5ff7761bc4c420c211d72e",
+    "projectID": "5d5ff7761bc4c420c211d742",
+    "creatorID": 405,
+    "name": "毎日リマインダー",
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale",
+      "access_token"
+    ],
+    "platformData": {
+      "publishing": {
+        "forExport": true,
+        "hasAds": false,
+        "summary": "This is a new summary for the skill リマインダーメモ",
+        "invocationName": "毎日リマインダー",
+        "locales": [
+          "ja-JP"
+        ],
+        "category": null,
+        "personal": false,
+        "keywords": "",
+        "smallIcon": "",
+        "largeIcon": "",
+        "description": "This is a new description for the skill リマインダーメモ\n\n Be sure to leave a 5-star review!",
+        "invocations": [
+          ""
+        ],
+        "hasPurchase": false,
+        "forChildren": false,
+        "instructions": "Sample Instruction",
+        "privacyPolicy": "https://creator.voiceflow.com/creator/terms?name=Kuniaki%20Shimizu&skill=%E6%AF%8E%E6%97%A5%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC&children=false",
+        "termsAndConditions": "https://creator.voiceflow.com/creator/terms?name=Kuniaki%20Shimizu&skill=%E6%AF%8E%E6%97%A5%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC&children=false",
+        "updatesDescription": ""
+      },
+      "settings": {
+        "error": {
+          "voice": "Alexa",
+          "content": ""
+        },
+        "repeat": "ALL",
+        "events": null,
+        "session": {
+          "type": "restart"
+        },
+        "permissions": [],
+        "accountLinking": null,
+        "customInterface": false
+      },
+      "slots": [
+        {
+          "key": "UMs6kqtxhfAI",
+          "name": "time_slot",
+          "type": {
+            "value": "AMAZON.TIME"
+          },
+          "color": "#3A7685",
+          "inputs": []
+        }
+      ],
+      "intents": [
+        {
+          "key": "hmeSOF7rPCF3",
+          "name": "remind_intent",
+          "slots": [
+            {
+              "id": "UMs6kqtxhfAI",
+              "dialog": {
+                "prompt": [
+                  {
+                    "text": "",
+                    "slots": []
+                  }
+                ],
+                "confirm": [
+                  {
+                    "text": "",
+                    "slots": []
+                  }
+                ],
+                "utterances": [],
+                "confirmEnabled": false
+              },
+              "required": false
+            }
+          ],
+          "inputs": [
+            {
+              "text": "{{[time_slot].UMs6kqtxhfAI}} に設定して",
+              "slots": [
+                "UMs6kqtxhfAI"
+              ]
+            },
+            {
+              "text": "{{[time_slot].UMs6kqtxhfAI}} に設定",
+              "slots": [
+                "UMs6kqtxhfAI"
+              ]
+            },
+            {
+              "text": "{{[time_slot].UMs6kqtxhfAI}} にリマインド",
+              "slots": [
+                "UMs6kqtxhfAI"
+              ]
+            },
+            {
+              "text": "{{[time_slot].UMs6kqtxhfAI}} にリマインドして",
+              "slots": [
+                "UMs6kqtxhfAI"
+              ]
+            },
+            {
+              "text": "{{[time_slot].UMs6kqtxhfAI}}",
+              "slots": [
+                "UMs6kqtxhfAI"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "AMAZON.CancelIntent",
+          "name": "AMAZON.CancelIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.FallbackIntent",
+          "name": "AMAZON.FallbackIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.HelpIntent",
+          "name": "AMAZON.HelpIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.LoopOffIntent",
+          "name": "AMAZON.LoopOffIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.LoopOnIntent",
+          "name": "AMAZON.LoopOnIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.MoreIntent",
+          "name": "AMAZON.MoreIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.NextIntent",
+          "name": "AMAZON.NextIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.NoIntent",
+          "name": "AMAZON.NoIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.YesIntent",
+          "name": "AMAZON.YesIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.StopIntent",
+          "name": "AMAZON.StopIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.ResumeIntent",
+          "name": "AMAZON.ResumeIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.RepeatIntent",
+          "name": "AMAZON.RepeatIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.PreviousIntent",
+          "name": "AMAZON.PreviousIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.PauseIntent",
+          "name": "AMAZON.PauseIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.StartOverIntent",
+          "name": "AMAZON.StartOverIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.ShuffleOnIntent",
+          "name": "AMAZON.ShuffleOnIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.ShuffleOffIntent",
+          "name": "AMAZON.ShuffleOffIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.SelectIntent",
+          "name": "AMAZON.SelectIntent",
+          "slots": [],
+          "inputs": []
+        }
+      ],
+      "status": {
+        "stage": "DEV"
+      }
+    },
+    "rootDiagramID": "5d5ff7761bc4c420c211d736"
+  },
+  "diagrams": {
+    "5d5ff7761bc4c420c211d741": {
+      "_id": "5d5ff7761bc4c420c211d741",
+      "offsetX": 196.5056480825485,
+      "offsetY": -280.4380134195621,
+      "zoom": 107.2755839029948,
+      "modified": 1604278267,
+      "nodes": {
+        "5f9f57fb1bc4c420c211d778": {
+          "nodeID": "5f9f57fb1bc4c420c211d778",
+          "type": "start",
+          "coords": [
+            318.6555416410991,
+            723.0260180267273
+          ],
+          "data": {
+            "name": "Start",
+            "color": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f57fb1bc4c420c211d77a"
+              }
+            ],
+            "steps": []
+          }
+        },
+        "5f9f57fb1bc4c420c211d779": {
+          "nodeID": "5f9f57fb1bc4c420c211d779",
+          "type": "block",
+          "coords": [
+            1025.9327133074253,
+            725.259217868546
+          ],
+          "data": {
+            "name": "Exit",
+            "color": "standard",
+            "steps": [
+              "5f9f57fb1bc4c420c211d77a",
+              "5f9f57fb1bc4c420c211d77b"
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d77a": {
+          "nodeID": "5f9f57fb1bc4c420c211d77a",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "You said stop. This session is now ending."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f57fb1bc4c420c211d77b"
+              }
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d77b": {
+          "nodeID": "5f9f57fb1bc4c420c211d77b",
+          "type": "exit",
+          "data": {
+            "ports": []
+          }
+        }
+      },
+      "children": [],
+      "creatorID": 405,
+      "variables": [],
+      "name": "Stop Flow",
+      "versionID": "5d5ff7761bc4c420c211d72e"
+    },
+    "5d5ff7761bc4c420c211d740": {
+      "_id": "5d5ff7761bc4c420c211d740",
+      "offsetX": 95.6173321191531,
+      "offsetY": -259.8069122961799,
+      "zoom": 95.65062662760417,
+      "modified": 1604278267,
+      "nodes": {
+        "5f9f57fb1bc4c420c211d77c": {
+          "nodeID": "5f9f57fb1bc4c420c211d77c",
+          "type": "start",
+          "coords": [
+            164.56545332484086,
+            677.7659183842676
+          ],
+          "data": {
+            "name": "Start",
+            "color": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f57fb1bc4c420c211d780"
+              }
+            ],
+            "steps": []
+          }
+        },
+        "5f9f57fb1bc4c420c211d77d": {
+          "nodeID": "5f9f57fb1bc4c420c211d77d",
+          "type": "block",
+          "coords": [
+            1606.1699808784972,
+            922.7940071498584
+          ],
+          "data": {
+            "name": "Exit",
+            "color": "standard",
+            "steps": [
+              "5f9f57fb1bc4c420c211d77e"
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d77e": {
+          "nodeID": "5f9f57fb1bc4c420c211d77e",
+          "type": "exit",
+          "data": {
+            "ports": []
+          }
+        },
+        "5f9f57fb1bc4c420c211d77f": {
+          "nodeID": "5f9f57fb1bc4c420c211d77f",
+          "type": "block",
+          "coords": [
+            856.1456417711843,
+            679.4386727157465
+          ],
+          "data": {
+            "name": "Help Message",
+            "color": "standard",
+            "steps": [
+              "5f9f57fb1bc4c420c211d780",
+              "5f9f57fb1bc4c420c211d781"
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d780": {
+          "nodeID": "5f9f57fb1bc4c420c211d780",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "You said help. Do you want to continue?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f57fb1bc4c420c211d781"
+              }
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d781": {
+          "nodeID": "5f9f57fb1bc4c420c211d781",
+          "type": "choice",
+          "data": {
+            "choices": [
+              {
+                "synonyms": [
+                  "yes",
+                  "Sure",
+                  "Okay"
+                ],
+                "open": true
+              },
+              {
+                "synonyms": [
+                  "no",
+                  "no thanks",
+                  "nope"
+                ],
+                "open": true
+              }
+            ],
+            "reprompt": null,
+            "name": "Choice",
+            "blockColor": "standard",
+            "ports": [
+              {
+                "type": "else",
+                "target": null
+              },
+              {
+                "type": "",
+                "target": null
+              },
+              {
+                "type": "",
+                "target": "5f9f57fb1bc4c420c211d77e"
+              }
+            ]
+          }
+        }
+      },
+      "children": [],
+      "creatorID": 405,
+      "variables": [],
+      "name": "Help Flow",
+      "versionID": "5d5ff7761bc4c420c211d72e"
+    },
+    "5d5ff7761bc4c420c211d736": {
+      "_id": "5d5ff7761bc4c420c211d736",
+      "offsetX": 1646.606289224709,
+      "offsetY": 112.41267907437194,
+      "zoom": 67.33447062174476,
+      "modified": 1623480173,
+      "nodes": {
+        "5f9f57fb1bc4c420c211d830": {
+          "nodeID": "5f9f57fb1bc4c420c211d830",
+          "type": "start",
+          "coords": [
+            -1767.7987656489327,
+            512.4103728959483
+          ],
+          "data": {
+            "name": "Start",
+            "color": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f57fb1bc4c420c211d84e",
+                "id": "60c36e47c07feb1f80efe335",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        -1602.7987416024196,
+                        592.4103943694781
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        -1544.975198993847,
+                        594.5722714335149
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    }
+                  ]
+                }
+              }
+            ],
+            "steps": [
+              "5f9f57fb1bc4c420c211d831",
+              "5f9f57fb1bc4c420c211d832"
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d831": {
+          "nodeID": "5f9f57fb1bc4c420c211d831",
+          "type": "command",
+          "data": {
+            "name": "Stop",
+            "intent": "AMAZON.StopIntent",
+            "diagramID": "5d5ff7761bc4c420c211d741",
+            "mappings": [],
+            "next": null,
+            "ports": []
+          }
+        },
+        "5f9f57fb1bc4c420c211d832": {
+          "nodeID": "5f9f57fb1bc4c420c211d832",
+          "type": "command",
+          "data": {
+            "name": "Help",
+            "intent": "AMAZON.HelpIntent",
+            "diagramID": "5d5ff7761bc4c420c211d740",
+            "mappings": [],
+            "next": null,
+            "ports": []
+          }
+        },
+        "5f9f57fb1bc4c420c211d833": {
+          "nodeID": "5f9f57fb1bc4c420c211d833",
+          "type": "block",
+          "coords": [
+            -920.1398448118558,
+            504.28722473021963
+          ],
+          "data": {
+            "name": "Speak",
+            "color": "standard",
+            "steps": [
+              "5f9f57fb1bc4c420c211d834",
+              "5f9f57fb1bc4c420c211d83c"
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d834": {
+          "nodeID": "5f9f57fb1bc4c420c211d834",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "毎日何時何分にリマインダーをセットしますか？"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f57fb1bc4c420c211d83c",
+                "id": "60c36e47c07feb1f80efe336"
+              }
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d836": {
+          "nodeID": "5f9f57fb1bc4c420c211d836",
+          "type": "permission",
+          "data": {
+            "permissions": [
+              "alexa::alerts:reminders:skill:readwrite"
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60c36e47c07feb1f80efe337"
+              }
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d837": {
+          "nodeID": "5f9f57fb1bc4c420c211d837",
+          "type": "block",
+          "coords": [
+            891.1026529014172,
+            748.3786751729355
+          ],
+          "data": {
+            "name": "Speak",
+            "color": "standard",
+            "steps": [
+              "5f9f57fb1bc4c420c211d838",
+              "5f9f57fb1bc4c420c211d836"
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d838": {
+          "nodeID": "5f9f57fb1bc4c420c211d838",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "このスキルでは、リマインダーへのアクセス権が必要になります。Alexaアプリのアクティビティーをご確認ください。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f57fb1bc4c420c211d836",
+                "id": "60c36e47c07feb1f80efe338"
+              }
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d839": {
+          "nodeID": "5f9f57fb1bc4c420c211d839",
+          "type": "block",
+          "coords": [
+            1353.6570341783945,
+            482.8698325709945
+          ],
+          "data": {
+            "name": "Speak",
+            "color": "standard",
+            "steps": [
+              "5f9f57fb1bc4c420c211d83a"
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d83a": {
+          "nodeID": "5f9f57fb1bc4c420c211d83a",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "毎日 {{[remindTime].remindTime}} にリマインダーを設定しました。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60c36e47c07feb1f80efe339"
+              }
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d83c": {
+          "nodeID": "5f9f57fb1bc4c420c211d83c",
+          "type": "interaction",
+          "data": {
+            "name": "Interaction",
+            "else": {
+              "type": "reprompt",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": "リマインダーを設定したい時間を言ってください。毎日何時何分にリマインダーをセットしますか？"
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "hmeSOF7rPCF3",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": null,
+            "buttons": null,
+            "ports": [
+              {
+                "type": "else",
+                "target": null,
+                "id": "60c36e47c07feb1f80efe33a"
+              },
+              {
+                "type": "1",
+                "target": "5f9f57fb1bc4c420c211d850",
+                "id": "60c36e47c07feb1f80efe33b",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        -755.1397976360065,
+                        668.2872032117149
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        -698.6933266940971,
+                        668.2872032117149
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        -698.6933266940971,
+                        579.6272198220615
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        -642.2468557521878,
+                        579.6272198220615
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d83f": {
+          "nodeID": "5f9f57fb1bc4c420c211d83f",
+          "type": "block",
+          "coords": [
+            -14.729153910259027,
+            492.66813061688595
+          ],
+          "data": {
+            "name": "Speak",
+            "color": "standard",
+            "steps": [
+              "5f9f57fb1bc4c420c211d840",
+              "5f9f57fb1bc4c420c211d842"
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d840": {
+          "nodeID": "5f9f57fb1bc4c420c211d840",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "毎日 {{[remindTime].remindTime}} にリマインダーを設定します。よろしいですか？"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f57fb1bc4c420c211d842",
+                "id": "60c36e47c07feb1f80efe33d"
+              }
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d842": {
+          "nodeID": "5f9f57fb1bc4c420c211d842",
+          "type": "interaction",
+          "data": {
+            "name": "Interaction",
+            "else": {
+              "type": "reprompt",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": "はい、か、いいえ、でお答えください。{{[remindTime].remindTime}} にリマインダーを設定してもよいですか？"
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "AMAZON.YesIntent",
+                "mappings": []
+              },
+              {
+                "intent": "AMAZON.NoIntent",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": null,
+            "buttons": null,
+            "ports": [
+              {
+                "type": "else",
+                "target": null,
+                "id": "60c36e47c07feb1f80efe33e"
+              },
+              {
+                "type": "1",
+                "target": "5f9f57fb1bc4c420c211d848",
+                "id": "60c36e47c07feb1f80efe33f",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        150.27081412565065,
+                        678.6681108429415
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        200.4295313442446,
+                        678.6681108429415
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        200.4295313442446,
+                        557.9382901524393
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        250.58824856283852,
+                        557.9382901524393
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "2",
+                "target": "5f9f57fb1bc4c420c211d846",
+                "id": "60c36e47c07feb1f80efe340",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        150.27081412565065,
+                        732.6680834682298
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        203.11116535105725,
+                        732.6680834682298
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        203.11116535105725,
+                        905.5490866541206
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        255.9515165764639,
+                        905.5490866541206
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d845": {
+          "nodeID": "5f9f57fb1bc4c420c211d845",
+          "type": "block",
+          "coords": [
+            421.9514058721457,
+            826.5490885599226
+          ],
+          "data": {
+            "name": "Speak",
+            "color": "standard",
+            "steps": [
+              "5f9f57fb1bc4c420c211d846"
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d846": {
+          "nodeID": "5f9f57fb1bc4c420c211d846",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "わかりました。リマインダーをキャンセルします。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60c36e47c07feb1f80efe342"
+              }
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d847": {
+          "nodeID": "5f9f57fb1bc4c420c211d847",
+          "type": "block",
+          "coords": [
+            416.5881510305387,
+            478.9383375521171
+          ],
+          "data": {
+            "name": "User Info",
+            "color": "standard",
+            "steps": [
+              "5f9f57fb1bc4c420c211d848"
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d848": {
+          "nodeID": "5f9f57fb1bc4c420c211d848",
+          "type": "user_info",
+          "data": {
+            "infos": [
+              {
+                "type": "alexa::alerts:reminders:skill:readwrite",
+                "mapTo": null,
+                "product": null
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f57fb1bc4c420c211d84c",
+                "id": "60c36e47c07feb1f80efe343",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        581.5882215204911,
+                        613.9383389797397
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        654.226471836486,
+                        613.9383389797397
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        654.226471836486,
+                        555.8379608672899
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        726.8647221524809,
+                        555.8379608672899
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "fail",
+                "target": "5f9f57fb1bc4c420c211d838",
+                "id": "60c36e47c07feb1f80efe344",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        581.5882215204911,
+                        667.9383569273984
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        653.345495602298,
+                        667.9383569273984
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        653.345495602298,
+                        827.3786486173392
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        725.1027696841049,
+                        827.3786486173392
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d849": {
+          "nodeID": "5f9f57fb1bc4c420c211d849",
+          "type": "block",
+          "coords": [
+            1352.9548512486529,
+            663.8619811568457
+          ],
+          "data": {
+            "name": "Speak",
+            "color": "standard",
+            "steps": [
+              "5f9f57fb1bc4c420c211d84a"
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d84a": {
+          "nodeID": "5f9f57fb1bc4c420c211d84a",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "リマインダーの設定に失敗しました。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60c36e47c07feb1f80efe345"
+              }
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d84b": {
+          "nodeID": "5f9f57fb1bc4c420c211d84b",
+          "type": "block",
+          "coords": [
+            892.8647588379056,
+            476.8379821238774
+          ],
+          "data": {
+            "name": "Reminder",
+            "color": "standard",
+            "steps": [
+              "5f9f57fb1bc4c420c211d84c"
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d84c": {
+          "nodeID": "5f9f57fb1bc4c420c211d84c",
+          "type": "reminder",
+          "data": {
+            "reminder": {
+              "name": "Reminder",
+              "type": "SCHEDULED_ABSOLUTE",
+              "text": "毎日リマインダー",
+              "time": {
+                "h": "{{[hh].hh}}",
+                "m": "{{[mm].mm}}",
+                "s": "00"
+              },
+              "date": "2020-08-30T15:00:00.000Z",
+              "timezone": "User Timezone",
+              "recurrence": {
+                "freq": "DAILY",
+                "byDay": "MO"
+              },
+              "recurrenceBool": true
+            },
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f57fb1bc4c420c211d83a",
+                "id": "60c36e47c07feb1f80efe346",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        1057.8648763996152,
+                        611.8380096945905
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1122.7608874841376,
+                        611.8380096945905
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1122.7608874841376,
+                        561.869824487806
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1187.65689856866,
+                        561.869824487806
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "fail",
+                "target": "5f9f57fb1bc4c420c211d84a",
+                "id": "60c36e47c07feb1f80efe347",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        1057.8646951101332,
+                        665.8379823198785
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1122.4097297589346,
+                        665.8379823198785
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1122.4097297589346,
+                        742.8619909995358
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1186.954764407736,
+                        742.8619909995358
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d84d": {
+          "nodeID": "5f9f57fb1bc4c420c211d84d",
+          "type": "block",
+          "coords": [
+            -1378.975194509696,
+            515.5722793865276
+          ],
+          "data": {
+            "name": "Speak",
+            "color": "standard",
+            "steps": [
+              "5f9f57fb1bc4c420c211d84e",
+              "5f9f57fb1bc4c420c211d854"
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d84e": {
+          "nodeID": "5f9f57fb1bc4c420c211d84e",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "毎日リマインダーのデモです。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f57fb1bc4c420c211d854",
+                "id": "60c36e47c07feb1f80efe348"
+              }
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d84f": {
+          "nodeID": "5f9f57fb1bc4c420c211d84f",
+          "type": "block",
+          "coords": [
+            -476.24683695907163,
+            500.62722843143433
+          ],
+          "data": {
+            "name": "Code",
+            "color": "standard",
+            "steps": [
+              "5f9f57fb1bc4c420c211d850"
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d850": {
+          "nodeID": "5f9f57fb1bc4c420c211d850",
+          "type": "code",
+          "data": {
+            "code": "var hh, mm;\nremindTime = time_slot;\nswitch (remindTime) {\ncase 'MO':\n    hh = '09'; mm = '00';\n    remindTime = '午前９時';\n    break;\ncase 'AF':\n    hh = '13'; mm = '00';\n    remindTime = '午後1時';\n    break;\ncase 'EV':\n    hh = '18'; mm = '00';\n    remindTime = '午後6時';\n    break;\ncase 'NI':\n    hh = '21'; mm = '00';\n    remindTime = '午後9時';\n    break;\ndefault:\n    [hh, mm] = remindTime.split(\":\");\n}",
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f57fb1bc4c420c211d840",
+                "id": "60c36e47c07feb1f80efe349",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        -311.2467015050531,
+                        635.6271780046211
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        -245.98793016852753,
+                        635.6271780046211
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        -245.98793016852753,
+                        571.6681583710005
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        -180.72915883200193,
+                        571.6681583710005
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "fail",
+                "target": "5f9f57fb1bc4c420c211d852",
+                "id": "60c36e47c07feb1f80efe34a",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        -311.2467015050531,
+                        689.6271959522797
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        -246.13749399056786,
+                        689.6271959522797
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        -246.13749399056786,
+                        908.1470102429616
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        -181.02828647608257,
+                        908.1470102429616
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d851": {
+          "nodeID": "5f9f57fb1bc4c420c211d851",
+          "type": "block",
+          "coords": [
+            -15.028422926675935,
+            829.1469819205863
+          ],
+          "data": {
+            "name": "Speak",
+            "color": "standard",
+            "steps": [
+              "5f9f57fb1bc4c420c211d852"
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d852": {
+          "nodeID": "5f9f57fb1bc4c420c211d852",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "ごめんなさい、エラーが発生しました。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60c36e47c07feb1f80efe34b"
+              }
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d854": {
+          "nodeID": "5f9f57fb1bc4c420c211d854",
+          "type": "user_info",
+          "data": {
+            "infos": [
+              {
+                "type": "alexa::alerts:reminders:skill:readwrite",
+                "mapTo": null,
+                "product": null
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f57fb1bc4c420c211d833",
+                "id": "60c36e47c07feb1f80efe34c",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        -1213.9751353914533,
+                        712.572280437559
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        -1149.5575003091108,
+                        712.572280437559
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        -1149.5575003091108,
+                        535.2872407688524
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        -1085.1398652267683,
+                        535.2872407688524
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": true
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "fail",
+                "target": "5f9f57fb1bc4c420c211d855",
+                "id": "60c36e47c07feb1f80efe34d",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        -1213.9751353914533,
+                        766.5722983852177
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        -1148.0532055159774,
+                        766.5722983852177
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        -1148.0532055159774,
+                        841.730504609194
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        -1082.1312756405014,
+                        841.730504609194
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": true
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d855": {
+          "nodeID": "5f9f57fb1bc4c420c211d855",
+          "type": "block",
+          "coords": [
+            -917.1313120497829,
+            810.7305011321401
+          ],
+          "data": {
+            "name": "Speak",
+            "color": "standard",
+            "steps": [
+              "5f9f57fb1bc4c420c211d856",
+              "5f9f57fb1bc4c420c211d858"
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d856": {
+          "nodeID": "5f9f57fb1bc4c420c211d856",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "このスキルでは、リマインダーへのアクセス権が必要になります。Alexaアプリのアクティビティーをご確認ください。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f57fb1bc4c420c211d858",
+                "id": "60c36e47c07feb1f80efe34e"
+              }
+            ]
+          }
+        },
+        "5f9f57fb1bc4c420c211d858": {
+          "nodeID": "5f9f57fb1bc4c420c211d858",
+          "type": "permission",
+          "data": {
+            "permissions": [
+              "alexa::alerts:reminders:skill:readwrite"
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60c36e47c07feb1f80efe34f"
+              }
+            ]
+          }
+        }
+      },
+      "children": [
+        "5d5ff7761bc4c420c211d741",
+        "5d5ff7761bc4c420c211d740"
+      ],
+      "creatorID": 405,
+      "variables": [
+        "hh",
+        "mm",
+        "remindTime"
+      ],
+      "name": "ROOT",
+      "versionID": "5d5ff7761bc4c420c211d72e"
+    }
+  }
+}
