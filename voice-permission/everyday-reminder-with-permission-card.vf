@@ -1,22 +1,22 @@
 {
   "_version": "1.0",
   "project": {
-    "_id": "5d5ff7761bc4c420c211d742",
+    "_id": "60c48f433ad30d001c0f4df4",
     "name": "毎日リマインダー",
     "creatorID": 405,
-    "teamID": "PGE9oXYjY3",
+    "teamID": "Brk8Z75nlQ",
     "platformData": {
       "products": {}
     },
     "members": [],
-    "devVersion": "5d5ff7761bc4c420c211d72e",
-    "privacy": "public",
+    "devVersion": "60c48f433ad30d001c0f4df5",
+    "privacy": "private",
     "platform": "alexa",
     "linkType": "STRAIGHT"
   },
   "version": {
-    "_id": "5d5ff7761bc4c420c211d72e",
-    "projectID": "5d5ff7761bc4c420c211d742",
+    "_id": "60c48f433ad30d001c0f4df5",
+    "projectID": "60c48f433ad30d001c0f4df4",
     "creatorID": 405,
     "name": "毎日リマインダー",
     "variables": [
@@ -31,7 +31,7 @@
       "publishing": {
         "forExport": true,
         "hasAds": false,
-        "summary": "This is a new summary for the skill リマインダーメモ",
+        "summary": "This is a new summary for the skill 毎日リマインダー",
         "invocationName": "毎日リマインダー",
         "locales": [
           "ja-JP"
@@ -41,15 +41,15 @@
         "keywords": "",
         "smallIcon": "",
         "largeIcon": "",
-        "description": "This is a new description for the skill リマインダーメモ\n\n Be sure to leave a 5-star review!",
+        "description": "This is a new description for the skill 毎日リマインダー\n\n Be sure to leave a 5-star review!",
         "invocations": [
-          ""
+          "毎日のお知らせをひらいて"
         ],
         "hasPurchase": false,
         "forChildren": false,
         "instructions": "Sample Instruction",
-        "privacyPolicy": "https://creator.voiceflow.com/creator/terms?name=Kuniaki%20Shimizu&skill=%E6%AF%8E%E6%97%A5%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC&children=false",
-        "termsAndConditions": "https://creator.voiceflow.com/creator/terms?name=Kuniaki%20Shimizu&skill=%E6%AF%8E%E6%97%A5%E3%83%AA%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC&children=false",
+        "privacyPolicy": "https://example.com/",
+        "termsAndConditions": "https://example.com/",
         "updatesDescription": ""
       },
       "settings": {
@@ -249,11 +249,11 @@
         "stage": "DEV"
       }
     },
-    "rootDiagramID": "5d5ff7761bc4c420c211d736"
+    "rootDiagramID": "60c48f433ad30d001c0f4df8"
   },
   "diagrams": {
-    "5d5ff7761bc4c420c211d741": {
-      "_id": "5d5ff7761bc4c420c211d741",
+    "60c48f433ad30d001c0f4df6": {
+      "_id": "60c48f433ad30d001c0f4df6",
       "offsetX": 196.5056480825485,
       "offsetY": -280.4380134195621,
       "zoom": 107.2755839029948,
@@ -325,10 +325,10 @@
       "creatorID": 405,
       "variables": [],
       "name": "Stop Flow",
-      "versionID": "5d5ff7761bc4c420c211d72e"
+      "versionID": "60c48f433ad30d001c0f4df5"
     },
-    "5d5ff7761bc4c420c211d740": {
-      "_id": "5d5ff7761bc4c420c211d740",
+    "60c48f433ad30d001c0f4df7": {
+      "_id": "60c48f433ad30d001c0f4df7",
       "offsetX": 95.6173321191531,
       "offsetY": -259.8069122961799,
       "zoom": 95.65062662760417,
@@ -456,21 +456,21 @@
       "creatorID": 405,
       "variables": [],
       "name": "Help Flow",
-      "versionID": "5d5ff7761bc4c420c211d72e"
+      "versionID": "60c48f433ad30d001c0f4df5"
     },
-    "5d5ff7761bc4c420c211d736": {
-      "_id": "5d5ff7761bc4c420c211d736",
-      "offsetX": 1648.7381330029682,
-      "offsetY": 96.17765500651714,
+    "60c48f433ad30d001c0f4df8": {
+      "_id": "60c48f433ad30d001c0f4df8",
+      "offsetX": 2127.7381330029684,
+      "offsetY": 8.177655006517142,
       "zoom": 82.33447062174476,
-      "modified": 1623487371,
+      "modified": 1623762602,
       "nodes": {
         "5f9f57fb1bc4c420c211d830": {
           "nodeID": "5f9f57fb1bc4c420c211d830",
           "type": "start",
           "coords": [
-            -1767.7987656489327,
-            512.4103728959483
+            -1766.5842075271053,
+            505.1230241649839
           ],
           "data": {
             "name": "Start",
@@ -478,32 +478,8 @@
             "ports": [
               {
                 "type": "",
-                "target": "5f9f57fb1bc4c420c211d84e",
-                "id": "60c36e47c07feb1f80efe335",
-                "data": {
-                  "points": [
-                    {
-                      "point": [
-                        -1602.7987416024196,
-                        592.4103943694781
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        -1544.975198993847,
-                        594.5722714335149
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    }
-                  ]
-                }
+                "target": "60c4e1d47f646976b39e9138",
+                "id": "60c36e47c07feb1f80efe335"
               }
             ],
             "steps": [
@@ -518,7 +494,7 @@
           "data": {
             "name": "Stop",
             "intent": "AMAZON.StopIntent",
-            "diagramID": "5d5ff7761bc4c420c211d741",
+            "diagramID": "60c48f433ad30d001c0f4df6",
             "mappings": [],
             "next": null,
             "ports": []
@@ -530,7 +506,7 @@
           "data": {
             "name": "Help",
             "intent": "AMAZON.HelpIntent",
-            "diagramID": "5d5ff7761bc4c420c211d740",
+            "diagramID": "60c48f433ad30d001c0f4df7",
             "mappings": [],
             "next": null,
             "ports": []
@@ -576,8 +552,8 @@
           "nodeID": "5f9f57fb1bc4c420c211d839",
           "type": "block",
           "coords": [
-            865.4046692037773,
-            478.0116000836848
+            934.6344821479395,
+            427.0001589669338
           ],
           "data": {
             "name": "Speak",
@@ -639,52 +615,8 @@
               },
               {
                 "type": "1",
-                "target": "5f9f57fb1bc4c420c211d850",
-                "id": "60c36e47c07feb1f80efe33b",
-                "data": {
-                  "points": [
-                    {
-                      "point": [
-                        -755.1397976360065,
-                        668.2872032117149
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        -698.6933266940971,
-                        668.2872032117149
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        -698.6933266940971,
-                        579.6272198220615
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        -642.2468557521878,
-                        579.6272198220615
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    }
-                  ]
-                }
+                "target": "5f9f57fb1bc4c420c211d84f",
+                "id": "60c36e47c07feb1f80efe33b"
               }
             ]
           }
@@ -693,8 +625,8 @@
           "nodeID": "5f9f57fb1bc4c420c211d83f",
           "type": "block",
           "coords": [
-            -14.729153910259027,
-            492.66813061688595
+            -26.87473512853305,
+            401.5762714798305
           ],
           "data": {
             "name": "Speak",
@@ -761,14 +693,14 @@
               },
               {
                 "type": "1",
-                "target": "5f9f57fb1bc4c420c211d84b",
+                "target": "60c4e4f97f646976b39e9145",
                 "id": "60c36e47c07feb1f80efe33f",
                 "data": {
                   "points": [
                     {
                       "point": [
-                        150.27089705881352,
-                        678.6681023268103
+                        138.12531584053943,
+                        587.5762802551274
                       ],
                       "toTop": false,
                       "locked": false,
@@ -777,8 +709,8 @@
                     },
                     {
                       "point": [
-                        206.47994730337206,
-                        678.6681023268103
+                        197.44752377584527,
+                        587.5762802551274
                       ],
                       "toTop": false,
                       "locked": false,
@@ -787,8 +719,8 @@
                     },
                     {
                       "point": [
-                        206.47994730337206,
-                        511.48160590419945
+                        197.44752377584527,
+                        469.2397206941256
                       ],
                       "toTop": false,
                       "locked": false,
@@ -797,8 +729,8 @@
                     },
                     {
                       "point": [
-                        262.6889975479306,
-                        511.48160590419945
+                        256.7697317111511,
+                        469.2397206941256
                       ],
                       "toTop": false,
                       "locked": false,
@@ -810,14 +742,14 @@
               },
               {
                 "type": "2",
-                "target": "5f9f57fb1bc4c420c211d846",
+                "target": "5f9f57fb1bc4c420c211d845",
                 "id": "60c36e47c07feb1f80efe340",
                 "data": {
                   "points": [
                     {
                       "point": [
-                        150.27081412565065,
-                        732.6680834682298
+                        138.12531584053943,
+                        641.5762652807169
                       ],
                       "toTop": false,
                       "locked": false,
@@ -826,8 +758,8 @@
                     },
                     {
                       "point": [
-                        203.11116535105725,
-                        732.6680834682298
+                        197.53837100352467,
+                        641.5762652807169
                       ],
                       "toTop": false,
                       "locked": false,
@@ -836,8 +768,8 @@
                     },
                     {
                       "point": [
-                        203.11116535105725,
-                        905.5490866541206
+                        197.53837100352467,
+                        857.5490526750507
                       ],
                       "toTop": false,
                       "locked": false,
@@ -846,13 +778,13 @@
                     },
                     {
                       "point": [
-                        255.9515165764639,
-                        905.5490866541206
+                        256.9514261665099,
+                        857.5490526750507
                       ],
                       "toTop": false,
                       "locked": false,
                       "reversed": false,
-                      "allowedToTop": false
+                      "allowedToTop": true
                     }
                   ]
                 }
@@ -899,8 +831,8 @@
           "nodeID": "5f9f57fb1bc4c420c211d849",
           "type": "block",
           "coords": [
-            874.4189512486558,
-            691.796817958876
+            958.2234616547469,
+            688.1531435933938
           ],
           "data": {
             "name": "Speak",
@@ -927,160 +859,6 @@
                 "target": null,
                 "id": "60c36e47c07feb1f80efe345"
               }
-            ]
-          }
-        },
-        "5f9f57fb1bc4c420c211d84b": {
-          "nodeID": "5f9f57fb1bc4c420c211d84b",
-          "type": "block",
-          "coords": [
-            427.6889981780094,
-            480.48165648935964
-          ],
-          "data": {
-            "name": "Reminder",
-            "color": "standard",
-            "steps": [
-              "5f9f57fb1bc4c420c211d84c"
-            ]
-          }
-        },
-        "5f9f57fb1bc4c420c211d84c": {
-          "nodeID": "5f9f57fb1bc4c420c211d84c",
-          "type": "reminder",
-          "data": {
-            "reminder": {
-              "name": "Reminder",
-              "type": "SCHEDULED_ABSOLUTE",
-              "text": "毎日リマインダー",
-              "time": {
-                "h": "{{[hh].hh}}",
-                "m": "{{[mm].mm}}",
-                "s": "00"
-              },
-              "date": "2020-08-30T15:00:00.000Z",
-              "timezone": "User Timezone",
-              "recurrence": {
-                "freq": "DAILY",
-                "byDay": "MO"
-              },
-              "recurrenceBool": true
-            },
-            "ports": [
-              {
-                "type": "",
-                "target": "5f9f57fb1bc4c420c211d83a",
-                "id": "60c36e47c07feb1f80efe346",
-                "data": {
-                  "points": [
-                    {
-                      "point": [
-                        592.6889638678624,
-                        615.4816871514956
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        646.0468034992904,
-                        615.4816871514956
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        646.0468034992904,
-                        557.011581152685
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        699.4046431307183,
-                        557.011581152685
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    }
-                  ]
-                }
-              },
-              {
-                "type": "fail",
-                "target": "5f9f57fb1bc4c420c211d84a",
-                "id": "60c36e47c07feb1f80efe347",
-                "data": {
-                  "points": [
-                    {
-                      "point": [
-                        592.6889638678624,
-                        669.4817092424577
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        650.5539527795092,
-                        669.4817092424577
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        650.5539527795092,
-                        770.7967911251778
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        708.4189416911562,
-                        770.7967911251778
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    }
-                  ]
-                }
-              }
-            ]
-          }
-        },
-        "5f9f57fb1bc4c420c211d84d": {
-          "nodeID": "5f9f57fb1bc4c420c211d84d",
-          "type": "block",
-          "coords": [
-            -1378.975194509696,
-            515.5722793865276
-          ],
-          "data": {
-            "name": "Speak",
-            "color": "standard",
-            "steps": [
-              "5f9f57fb1bc4c420c211d84e",
-              "5f9f57fb1bc4c420c211d854"
             ]
           }
         },
@@ -1127,14 +905,14 @@
             "ports": [
               {
                 "type": "",
-                "target": "5f9f57fb1bc4c420c211d840",
+                "target": "5f9f57fb1bc4c420c211d83f",
                 "id": "60c36e47c07feb1f80efe349",
                 "data": {
                   "points": [
                     {
                       "point": [
-                        -311.2467015050531,
-                        635.6271780046211
+                        -311.2468078711209,
+                        635.6271618191793
                       ],
                       "toTop": false,
                       "locked": false,
@@ -1143,8 +921,8 @@
                     },
                     {
                       "point": [
-                        -245.98793016852753,
-                        635.6271780046211
+                        -251.5607291752566,
+                        635.6271618191793
                       ],
                       "toTop": false,
                       "locked": false,
@@ -1153,8 +931,8 @@
                     },
                     {
                       "point": [
-                        -245.98793016852753,
-                        571.6681583710005
+                        -251.5607291752566,
+                        432.5762852218872
                       ],
                       "toTop": false,
                       "locked": false,
@@ -1163,65 +941,21 @@
                     },
                     {
                       "point": [
-                        -180.72915883200193,
-                        571.6681583710005
+                        -191.87465047939233,
+                        432.5762852218872
                       ],
                       "toTop": false,
                       "locked": false,
                       "reversed": false,
-                      "allowedToTop": false
+                      "allowedToTop": true
                     }
                   ]
                 }
               },
               {
                 "type": "fail",
-                "target": "5f9f57fb1bc4c420c211d852",
-                "id": "60c36e47c07feb1f80efe34a",
-                "data": {
-                  "points": [
-                    {
-                      "point": [
-                        -311.2467015050531,
-                        689.6271959522797
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        -246.13749399056786,
-                        689.6271959522797
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        -246.13749399056786,
-                        908.1470102429616
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        -181.02828647608257,
-                        908.1470102429616
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    }
-                  ]
-                }
+                "target": "5f9f57fb1bc4c420c211d851",
+                "id": "60c36e47c07feb1f80efe34a"
               }
             ]
           }
@@ -1276,100 +1010,12 @@
               {
                 "type": "",
                 "target": "5f9f57fb1bc4c420c211d833",
-                "id": "60c36e47c07feb1f80efe34c",
-                "data": {
-                  "points": [
-                    {
-                      "point": [
-                        -1213.9751353914533,
-                        712.572280437559
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        -1149.5575003091108,
-                        712.572280437559
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        -1149.5575003091108,
-                        535.2872407688524
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        -1085.1398652267683,
-                        535.2872407688524
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": true
-                    }
-                  ]
-                }
+                "id": "60c36e47c07feb1f80efe34c"
               },
               {
                 "type": "fail",
                 "target": "5f9f57fb1bc4c420c211d855",
-                "id": "60c36e47c07feb1f80efe34d",
-                "data": {
-                  "points": [
-                    {
-                      "point": [
-                        -1213.9751353914533,
-                        766.5722983852177
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        -1148.0532055159774,
-                        766.5722983852177
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        -1148.0532055159774,
-                        841.730504609194
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        -1082.1312756405014,
-                        841.730504609194
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": true
-                    }
-                  ]
-                }
+                "id": "60c36e47c07feb1f80efe34d"
               }
             ]
           }
@@ -1425,20 +1071,177 @@
               }
             ]
           }
+        },
+        "60c4e1d47f646976b39e9138": {
+          "nodeID": "60c4e1d47f646976b39e9138",
+          "type": "block",
+          "coords": [
+            -1349.0560206621644,
+            505.0404063491524
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "5f9f57fb1bc4c420c211d84e",
+              "5f9f57fb1bc4c420c211d854"
+            ]
+          }
+        },
+        "60c4e4f97f646976b39e9141": {
+          "nodeID": "60c4e4f97f646976b39e9141",
+          "type": "reminder",
+          "data": {
+            "reminder": {
+              "name": "Reminder",
+              "type": "SCHEDULED_ABSOLUTE",
+              "text": "テスト",
+              "time": {
+                "h": "{{[hh].hh}}",
+                "m": "{{[mm].mm}}",
+                "s": "0"
+              },
+              "date": "2021-07-31T15:00:00.000Z",
+              "timezone": "User Timezone",
+              "recurrence": {
+                "freq": "DAILY"
+              },
+              "recurrenceBool": true
+            },
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f57fb1bc4c420c211d839",
+                "id": "60c4e4f97f646976b39e9143",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        586.7697721618276,
+                        573.2397278106771
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        678.2021199005521,
+                        573.2397278106771
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        678.2021199005521,
+                        458.0001283726969
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        769.6344676392765,
+                        458.0001283726969
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": true
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "fail",
+                "target": "5f9f57fb1bc4c420c211d849",
+                "id": "60c4e4f97f646976b39e9144",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        586.7697721618276,
+                        627.2397128362667
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        689.9966179117354,
+                        627.2397128362667
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        689.9966179117354,
+                        719.1531421618309
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        793.2234636616431,
+                        719.1531421618309
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": true
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "60c4e4f97f646976b39e9145": {
+          "nodeID": "60c4e4f97f646976b39e9145",
+          "type": "block",
+          "coords": [
+            421.7697209621933,
+            438.2397096486443
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60c4e4f97f646976b39e9141"
+            ]
+          }
         }
       },
       "children": [
-        "5d5ff7761bc4c420c211d741",
-        "5d5ff7761bc4c420c211d740"
+        "60c48f433ad30d001c0f4df6",
+        "60c48f433ad30d001c0f4df7"
       ],
       "creatorID": 405,
       "variables": [
         "hh",
         "mm",
-        "remindTime"
+        "remindTime",
+        "apiAccessToken",
+        "apiEndpoint",
+        "deviceId",
+        "now"
       ],
       "name": "ROOT",
-      "versionID": "5d5ff7761bc4c420c211d72e"
+      "versionID": "60c48f433ad30d001c0f4df5"
     }
   }
 }
