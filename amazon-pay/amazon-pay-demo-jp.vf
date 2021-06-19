@@ -1,0 +1,4012 @@
+{
+  "_version": "1.0",
+  "project": {
+    "_id": "60b900df80da71001c673c3a",
+    "name": "ブックストアのデモ",
+    "teamID": "4DjZPGaEmb",
+    "devVersion": "60b900dfa26cd400069259d7",
+    "platform": "alexa",
+    "platformData": {
+      "products": []
+    },
+    "members": [],
+    "image": "https://s3.amazonaws.com/com.getstoryflow.api.images/1622712614264-appicon.png",
+    "linkType": "STRAIGHT",
+    "creatorID": 405
+  },
+  "version": {
+    "_id": "60b900dfa26cd400069259d7",
+    "name": "Initial Version",
+    "projectID": "60b900df80da71001c673c3a",
+    "variables": [
+      "data",
+      "statusCode",
+      "statusMessage",
+      "billingId",
+      "event",
+      "sellerId",
+      "tokenId",
+      "sandboxCustomer",
+      "authorizationRef",
+      "apiAccessToken",
+      "apiEndpoint",
+      "deviceId",
+      "debug",
+      "addresses",
+      "addressLine1",
+      "city",
+      "countryCode",
+      "name",
+      "phone",
+      "postalCode",
+      "stateOrRegion",
+      "addressLine2",
+      "orderRefId",
+      "data_json"
+    ],
+    "platformData": {
+      "slots": [],
+      "intents": [
+        {
+          "key": "AMAZON.CancelIntent",
+          "name": "AMAZON.CancelIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.FallbackIntent",
+          "name": "AMAZON.FallbackIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.HelpIntent",
+          "name": "AMAZON.HelpIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.LoopOffIntent",
+          "name": "AMAZON.LoopOffIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.LoopOnIntent",
+          "name": "AMAZON.LoopOnIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.MoreIntent",
+          "name": "AMAZON.MoreIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.NextIntent",
+          "name": "AMAZON.NextIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.NoIntent",
+          "name": "AMAZON.NoIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.YesIntent",
+          "name": "AMAZON.YesIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.StopIntent",
+          "name": "AMAZON.StopIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.ResumeIntent",
+          "name": "AMAZON.ResumeIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.RepeatIntent",
+          "name": "AMAZON.RepeatIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.PreviousIntent",
+          "name": "AMAZON.PreviousIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.PauseIntent",
+          "name": "AMAZON.PauseIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.StartOverIntent",
+          "name": "AMAZON.StartOverIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.ShuffleOnIntent",
+          "name": "AMAZON.ShuffleOnIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.ShuffleOffIntent",
+          "name": "AMAZON.ShuffleOffIntent",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "AMAZON.SelectIntent",
+          "name": "AMAZON.SelectIntent",
+          "slots": [],
+          "inputs": []
+        }
+      ],
+      "settings": {
+        "events": "",
+        "customInterface": false,
+        "session": {
+          "type": "restart"
+        },
+        "repeat": "ALL",
+        "accountLinking": null,
+        "error": null
+      },
+      "publishing": {
+        "summary": "Description",
+        "invocations": [
+          "open ブックストアのデモ",
+          "start ブックストアのデモ",
+          "launch ブックストアのデモ"
+        ],
+        "smallIcon": "https://s3.amazonaws.com/com.getstoryflow.api.images/1622712631546-appicon.png",
+        "largeIcon": "https://s3.amazonaws.com/com.getstoryflow.api.images/1622712627837-appicon.png",
+        "hasAds": false,
+        "personal": false,
+        "forExport": true,
+        "invocationName": "ブックストアのデモ",
+        "hasPurchase": true,
+        "forChildren": false,
+        "description": "",
+        "instructions": "",
+        "privacyPolicy": "https://creator.voiceflow.com/creator/terms?name=Nicolas%20Arcay&skill=Amazon%20Pay&children=false",
+        "termsAndConditions": "",
+        "keywords": "",
+        "category": "",
+        "locales": [
+          "ja-JP"
+        ],
+        "updatesDescription": null
+      },
+      "status": {
+        "stage": "DEV"
+      }
+    },
+    "rootDiagramID": "60b900dfa26cd400069259d8",
+    "creatorID": 405
+  },
+  "diagrams": {
+    "60b900dfa26cd400069259d9": {
+      "_id": "60b900dfa26cd400069259d9",
+      "name": "End Session",
+      "offsetX": 206.51942553425963,
+      "offsetY": 119.61838012311347,
+      "zoom": 93.10542690398123,
+      "variables": [],
+      "nodes": {
+        "5f9f562f11b31520c2a2a6e7": {
+          "nodeID": "5f9f562f11b31520c2a2a6e7",
+          "type": "start",
+          "coords": [
+            360,
+            120
+          ],
+          "data": {
+            "name": "Start",
+            "color": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f562f11b31520c2a2a6e8",
+                "id": "5fde6fe15bc1c56319fad3b2"
+              }
+            ],
+            "steps": []
+          }
+        },
+        "5f9f562f11b31520c2a2a6e8": {
+          "nodeID": "5f9f562f11b31520c2a2a6e8",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "わかりました。またのご利用お待ちしております。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f562f11b31520c2a2a6ea",
+                "id": "5fde6fe15bc1c56319fad3b3"
+              }
+            ]
+          }
+        },
+        "5f9f562f11b31520c2a2a6e9": {
+          "nodeID": "5f9f562f11b31520c2a2a6e9",
+          "type": "block",
+          "coords": [
+            805.9688890631405,
+            120.94792332948695
+          ],
+          "data": {
+            "name": "Exit",
+            "color": "red",
+            "steps": [
+              "5f9f562f11b31520c2a2a6e8",
+              "5f9f562f11b31520c2a2a6ea"
+            ]
+          }
+        },
+        "5f9f562f11b31520c2a2a6ea": {
+          "nodeID": "5f9f562f11b31520c2a2a6ea",
+          "type": "exit",
+          "data": {
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "5fde6fe15bc1c56319fad3b4"
+              }
+            ]
+          }
+        }
+      },
+      "children": [],
+      "versionID": "60b900dfa26cd400069259d7",
+      "creatorID": 405,
+      "modified": 1624110681
+    },
+    "60b900dfa26cd400069259da": {
+      "_id": "60b900dfa26cd400069259da",
+      "name": "Help User",
+      "offsetX": 196.5723910133667,
+      "offsetY": 143.32399142840148,
+      "zoom": 76.41405779564307,
+      "variables": [],
+      "nodes": {
+        "5f9f562f11b31520c2a2a6e1": {
+          "nodeID": "5f9f562f11b31520c2a2a6e1",
+          "type": "start",
+          "coords": [
+            360,
+            120
+          ],
+          "data": {
+            "name": "Start",
+            "color": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f562f11b31520c2a2a6e2",
+                "id": "5fde75904a001a20aa671626"
+              }
+            ],
+            "steps": []
+          }
+        },
+        "5f9f562f11b31520c2a2a6e2": {
+          "nodeID": "5f9f562f11b31520c2a2a6e2",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "このスキルは<sub alias=\"アマゾンペイ\">Amazon Pay</sub>のデモです。続けますか？"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f562f11b31520c2a2a6e4",
+                "id": "5fde75904a001a20aa671627"
+              }
+            ]
+          }
+        },
+        "5f9f562f11b31520c2a2a6e3": {
+          "nodeID": "5f9f562f11b31520c2a2a6e3",
+          "type": "block",
+          "coords": [
+            808.6506721313523,
+            121.24568139701532
+          ],
+          "data": {
+            "name": "Help Message",
+            "color": "standard",
+            "steps": [
+              "5f9f562f11b31520c2a2a6e2",
+              "5f9f562f11b31520c2a2a6e4"
+            ]
+          }
+        },
+        "5f9f562f11b31520c2a2a6e4": {
+          "nodeID": "5f9f562f11b31520c2a2a6e4",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "reprompt",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": "Do you want to continue?"
+                },
+                {
+                  "voice": "Alexa",
+                  "content": "Please say yes or no."
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "AMAZON.YesIntent",
+                "mappings": []
+              },
+              {
+                "intent": "AMAZON.NoIntent",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": null,
+            "buttons": null,
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "5fde75904a001a20aa671628"
+              },
+              {
+                "type": "",
+                "target": null,
+                "id": "5fde75904a001a20aa671629"
+              },
+              {
+                "type": 2,
+                "target": "5f9f562f11b31520c2a2a6e6",
+                "id": "5fde75904a001a20aa67162a"
+              }
+            ]
+          }
+        },
+        "5f9f562f11b31520c2a2a6e5": {
+          "nodeID": "5f9f562f11b31520c2a2a6e5",
+          "type": "exit",
+          "data": {
+            "ports": []
+          }
+        },
+        "5f9f562f11b31520c2a2a6e6": {
+          "nodeID": "5f9f562f11b31520c2a2a6e6",
+          "type": "block",
+          "coords": [
+            1295.0066750587603,
+            408.4923354011805
+          ],
+          "data": {
+            "name": "Exit",
+            "color": "red",
+            "steps": [
+              "5fde75c44a001a20aa67166d",
+              "5f9f562f11b31520c2a2a6e5"
+            ]
+          }
+        },
+        "5fde75c44a001a20aa67166d": {
+          "nodeID": "5fde75c44a001a20aa67166d",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "さようなら。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f562f11b31520c2a2a6e5",
+                "id": "5fde75c44a001a20aa671670"
+              }
+            ]
+          }
+        }
+      },
+      "children": [],
+      "versionID": "60b900dfa26cd400069259d7",
+      "creatorID": 405,
+      "modified": 1624110476
+    },
+    "60b900dfa26cd400069259d8": {
+      "_id": "60b900dfa26cd400069259d8",
+      "name": "ROOT",
+      "offsetX": 1213.5228846211799,
+      "offsetY": 541.4790664277555,
+      "zoom": 76.66209920247395,
+      "variables": [],
+      "nodes": {
+        "5f9f562f11b31520c2a2a6de": {
+          "nodeID": "5f9f562f11b31520c2a2a6de",
+          "type": "start",
+          "coords": [
+            344.86547085201784,
+            76.27802690582959
+          ],
+          "data": {
+            "name": "Start",
+            "color": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": "60afdb8fef14de0d0847b40f",
+                "id": "5fde6fac5bc1c56319fad39b"
+              }
+            ],
+            "steps": [
+              "5f9f562f11b31520c2a2a6df",
+              "5f9f562f11b31520c2a2a6e0",
+              "5fde6fb05bc1c56319fad3a0"
+            ]
+          }
+        },
+        "5f9f562f11b31520c2a2a6df": {
+          "nodeID": "5f9f562f11b31520c2a2a6df",
+          "type": "command",
+          "data": {
+            "name": "Help",
+            "intent": "AMAZON.HelpIntent",
+            "diagramID": "60b900dfa26cd400069259da",
+            "mappings": [],
+            "next": null,
+            "ports": []
+          }
+        },
+        "5f9f562f11b31520c2a2a6e0": {
+          "nodeID": "5f9f562f11b31520c2a2a6e0",
+          "type": "command",
+          "data": {
+            "name": "Stop",
+            "intent": "AMAZON.StopIntent",
+            "diagramID": "60b900dfa26cd400069259d9",
+            "mappings": [],
+            "next": null,
+            "ports": []
+          }
+        },
+        "5fde6fb05bc1c56319fad3a0": {
+          "nodeID": "5fde6fb05bc1c56319fad3a0",
+          "type": "command",
+          "data": {
+            "name": "Cancel",
+            "intent": "AMAZON.CancelIntent",
+            "diagramID": "60b900dfa26cd400069259d9",
+            "mappings": [],
+            "next": null,
+            "ports": []
+          }
+        },
+        "60afcd30838e798cf94ce500": {
+          "nodeID": "60afcd30838e798cf94ce500",
+          "type": "directive",
+          "data": {
+            "directive": "{\n            \"type\": \"Connections.SendRequest\",\n            \"name\": \"Setup\",\n            \"payload\": {\n                \"@type\": \"SetupAmazonPayRequest\",\n                \"@version\": \"2\",\n                \"sellerId\": \"{sellerId}\",\n                \"countryOfEstablishment\": \"JP\",\n                \"ledgerCurrency\": \"JPY\",\n                \"checkoutLanguage\": \"ja-JP\",\n                \"needAmazonShippingAddress\": true,\n                \"sandboxMode\": true,\n                \"sandboxCustomerEmailId\":\"{sandboxCustomer}\"\n            },\n            \"token\": \"{tokenId}\"\n}",
+            "ports": [
+              {
+                "type": "",
+                "target": "60afcdb1838e798cf94ce50e",
+                "id": "60afcd30838e798cf94ce502"
+              }
+            ]
+          }
+        },
+        "60afcd30838e798cf94ce503": {
+          "nodeID": "60afcd30838e798cf94ce503",
+          "type": "block",
+          "coords": [
+            1198.8398131423846,
+            75.83149483031373
+          ],
+          "data": {
+            "name": "Prompt",
+            "color": "purple",
+            "steps": [
+              "60afce43838e798cf94ce53f",
+              "60b8bf094583841e6367fca2",
+              "60b8bee24583841e6367fc84"
+            ]
+          }
+        },
+        "60afcdb1838e798cf94ce50e": {
+          "nodeID": "60afcdb1838e798cf94ce50e",
+          "type": "code",
+          "data": {
+            "code": "_response = {\n  shouldEndSession: null\n}",
+            "ports": [
+              {
+                "type": "",
+                "target": "60afce57838e798cf94ce546",
+                "id": "60afcdb1838e798cf94ce50f"
+              },
+              {
+                "type": "fail",
+                "target": "60afce57838e798cf94ce546",
+                "id": "60afcdb1838e798cf94ce510"
+              }
+            ]
+          }
+        },
+        "60afcdbb838e798cf94ce51b": {
+          "nodeID": "60afcdbb838e798cf94ce51b",
+          "type": "event",
+          "data": {
+            "mappings": [
+              {
+                "dispatchConfig": null,
+                "_targetInst": null,
+                "nativeEvent": null,
+                "type": null,
+                "target": null,
+                "currentTarget": null,
+                "eventPhase": null,
+                "bubbles": null,
+                "cancelable": null,
+                "timeStamp": null,
+                "defaultPrevented": null,
+                "isTrusted": null,
+                "view": null,
+                "detail": null,
+                "screenX": null,
+                "screenY": null,
+                "clientX": null,
+                "clientY": null,
+                "pageX": null,
+                "pageY": null,
+                "ctrlKey": null,
+                "shiftKey": null,
+                "altKey": null,
+                "metaKey": null,
+                "getModifierState": null,
+                "button": null,
+                "buttons": null,
+                "relatedTarget": null,
+                "movementX": null,
+                "movementY": null,
+                "_dispatchListeners": null,
+                "_dispatchInstances": null,
+                "path": "data.status.code",
+                "var": "statusCode"
+              },
+              {
+                "dispatchConfig": null,
+                "_targetInst": null,
+                "nativeEvent": null,
+                "type": null,
+                "target": null,
+                "currentTarget": null,
+                "eventPhase": null,
+                "bubbles": null,
+                "cancelable": null,
+                "timeStamp": null,
+                "defaultPrevented": null,
+                "isTrusted": null,
+                "view": null,
+                "detail": null,
+                "screenX": null,
+                "screenY": null,
+                "clientX": null,
+                "clientY": null,
+                "pageX": null,
+                "pageY": null,
+                "ctrlKey": null,
+                "shiftKey": null,
+                "altKey": null,
+                "metaKey": null,
+                "getModifierState": null,
+                "button": null,
+                "buttons": null,
+                "relatedTarget": null,
+                "movementX": null,
+                "movementY": null,
+                "_dispatchListeners": null,
+                "_dispatchInstances": null,
+                "path": "data.status.message",
+                "var": "statusMessage"
+              },
+              {
+                "dispatchConfig": null,
+                "_targetInst": null,
+                "nativeEvent": null,
+                "type": null,
+                "target": null,
+                "currentTarget": null,
+                "eventPhase": null,
+                "bubbles": null,
+                "cancelable": null,
+                "timeStamp": null,
+                "defaultPrevented": null,
+                "isTrusted": null,
+                "view": null,
+                "detail": null,
+                "screenX": null,
+                "screenY": null,
+                "clientX": null,
+                "clientY": null,
+                "pageX": null,
+                "pageY": null,
+                "ctrlKey": null,
+                "shiftKey": null,
+                "altKey": null,
+                "metaKey": null,
+                "getModifierState": null,
+                "button": null,
+                "buttons": null,
+                "relatedTarget": null,
+                "movementX": null,
+                "movementY": null,
+                "_dispatchListeners": null,
+                "_dispatchInstances": null,
+                "path": "data.payload.billingAgreementDetails.billingAgreementId",
+                "var": "billingId"
+              },
+              {
+                "dispatchConfig": null,
+                "_targetInst": null,
+                "nativeEvent": null,
+                "type": null,
+                "target": null,
+                "currentTarget": null,
+                "eventPhase": null,
+                "bubbles": null,
+                "cancelable": null,
+                "timeStamp": null,
+                "defaultPrevented": null,
+                "isTrusted": null,
+                "view": null,
+                "detail": null,
+                "screenX": null,
+                "screenY": null,
+                "clientX": null,
+                "clientY": null,
+                "pageX": null,
+                "pageY": null,
+                "ctrlKey": null,
+                "shiftKey": null,
+                "altKey": null,
+                "metaKey": null,
+                "getModifierState": null,
+                "button": null,
+                "buttons": null,
+                "relatedTarget": null,
+                "movementX": null,
+                "movementY": null,
+                "_dispatchListeners": null,
+                "_dispatchInstances": null,
+                "path": "data.name",
+                "var": "event"
+              },
+              {
+                "dispatchConfig": null,
+                "_targetInst": null,
+                "nativeEvent": null,
+                "type": null,
+                "target": null,
+                "currentTarget": null,
+                "eventPhase": null,
+                "bubbles": null,
+                "cancelable": null,
+                "timeStamp": null,
+                "defaultPrevented": null,
+                "isTrusted": null,
+                "view": null,
+                "detail": null,
+                "screenX": null,
+                "screenY": null,
+                "clientX": null,
+                "clientY": null,
+                "pageX": null,
+                "pageY": null,
+                "ctrlKey": null,
+                "shiftKey": null,
+                "altKey": null,
+                "metaKey": null,
+                "getModifierState": null,
+                "button": null,
+                "buttons": null,
+                "relatedTarget": null,
+                "movementX": null,
+                "movementY": null,
+                "_dispatchListeners": null,
+                "_dispatchInstances": null,
+                "path": "data",
+                "var": "data"
+              }
+            ],
+            "requestName": "Connections.Response",
+            "ports": [
+              {
+                "type": "",
+                "target": "60b8b9204583841e6367fc3a",
+                "id": "60afcdbb838e798cf94ce51c"
+              }
+            ]
+          }
+        },
+        "60afcdbb838e798cf94ce51d": {
+          "nodeID": "60afcdbb838e798cf94ce51d",
+          "type": "block",
+          "coords": [
+            338.16140310503226,
+            811.068265901903
+          ],
+          "data": {
+            "name": "Events",
+            "color": "green",
+            "steps": [
+              "60afcdbb838e798cf94ce51b",
+              "60b8b9204583841e6367fc3a",
+              "60afda90ef14de0d0847b3f9"
+            ]
+          }
+        },
+        "60afce43838e798cf94ce53f": {
+          "nodeID": "60afce43838e798cf94ce53f",
+          "type": "speak",
+          "data": {
+            "randomize": true,
+            "canvasVisibility": "preview",
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "ブックストアのデモへようこそ。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60b8bf094583841e6367fca2",
+                "id": "60afce43838e798cf94ce542"
+              }
+            ]
+          }
+        },
+        "60afce57838e798cf94ce546": {
+          "nodeID": "60afce57838e798cf94ce546",
+          "type": "prompt",
+          "data": {
+            "ports": [],
+            "reprompt": null,
+            "noMatches": {
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "chips": null,
+            "buttons": null
+          }
+        },
+        "60afda90ef14de0d0847b3f9": {
+          "nodeID": "60afda90ef14de0d0847b3f9",
+          "type": "ifV2",
+          "data": {
+            "expressions": [
+              {
+                "type": null,
+                "name": "",
+                "value": [
+                  {
+                    "logicInterface": "variable",
+                    "type": "equals",
+                    "value": [
+                      {
+                        "type": "variable",
+                        "value": "event"
+                      },
+                      {
+                        "type": "value",
+                        "value": "Setup"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": null,
+                "name": "",
+                "value": [
+                  {
+                    "logicInterface": "variable",
+                    "type": "equals",
+                    "value": [
+                      {
+                        "type": "variable",
+                        "value": "event"
+                      },
+                      {
+                        "type": "value",
+                        "value": "Charge"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60afdef7ef14de0d0847b42a",
+                "id": "60afda90ef14de0d0847b3fc",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        173.16138085694627,
+                        1125.068226803624
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": true,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        148.7388020080127,
+                        1125.068226803624
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        148.7388020080127,
+                        1278.2865253852228
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        172.7388020080127,
+                        1278.2865253852228
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "",
+                "target": "60affd0fb744c3eb01e3ae64",
+                "id": "60afda90ef14de0d0847b3fd",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        503.1784183969915,
+                        1015.989988818828
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        779.6485434680193,
+                        1015.989988818828
+                      ],
+                      "toTop": false,
+                      "locked": true,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        779.6485434680193,
+                        830.5285656143473
+                      ],
+                      "toTop": false,
+                      "locked": true,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        827.9556500443761,
+                        830.5285656143473
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": true
+                    }
+                  ],
+                  "color": "#00b76d",
+                  "caption": {
+                    "value": "SETUP",
+                    "width": 53,
+                    "height": 24
+                  }
+                }
+              },
+              {
+                "type": 2,
+                "target": "60affcfbb744c3eb01e3ae5a",
+                "id": "60affce5b744c3eb01e3ae54",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        503.1784183969915,
+                        1069.981566450829
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        779.6485434680193,
+                        1069.981566450829
+                      ],
+                      "toTop": false,
+                      "locked": true,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        779.6485434680193,
+                        1416.549811028604
+                      ],
+                      "toTop": false,
+                      "locked": true,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        988.5217095189297,
+                        1416.549811028604
+                      ],
+                      "toTop": false,
+                      "locked": true,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        988.5217095189297,
+                        1482.7107812373451
+                      ],
+                      "toTop": true,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": true
+                    }
+                  ],
+                  "caption": {
+                    "value": "CHARGE",
+                    "width": 67,
+                    "height": 24
+                  },
+                  "color": "#00b76d"
+                }
+              }
+            ]
+          }
+        },
+        "60afdafdef14de0d0847b402": {
+          "nodeID": "60afdafdef14de0d0847b402",
+          "type": "directive",
+          "data": {
+            "directive": "{\n            \"type\": \"Connections.SendRequest\",\n            \"name\": \"Charge\",\n            \"payload\": {\n                \"@type\": \"ChargeAmazonPayRequest\",\n                \"@version\": \"2\",\n                \"sellerId\": \"{sellerId}\",\n                \"billingAgreementId\": \"{billingId}\",\n                \"paymentAction\": \"AuthorizeAndCapture\",\n                \"authorizeAttributes\": {\n                    \"@type\": \"AuthorizeAttributes\",\n                    \"@version\": \"2\",\n                    \"authorizationReferenceId\": \"{authorizationRef}\",\n                    \"authorizationAmount\": {\n                        \"@type\": \"Price\",\n                        \"@version\": \"2\",\n                        \"amount\": \"1000\",\n                        \"currencyCode\": \"JPY\"\n                    },\n                    \"transactionTimeout\": 0,\n                    \"sellerAuthorizationNote\": \"Test Seller Authorization Note\"\n                },\n                \"sellerOrderAttributes\": {\n                    \"@type\": \"SellerOrderAttributes\",\n                    \"@version\": \"2\",\n                    \"sellerOrderId\": \"{orderRefId}\",\n                    \"storeName\": \"Voiceflow Store\",\n                    \"customInformation\": \"Test custom information\",\n                    \"sellerNote\": \"Test seller note\"\n                }\n        },\n        \"token\": \"{tokenId}\"\n}",
+            "ports": [
+              {
+                "type": "",
+                "target": "60b8b0864583841e6367fbc0",
+                "id": "60afdafdef14de0d0847b404"
+              }
+            ]
+          }
+        },
+        "60afdafdef14de0d0847b405": {
+          "nodeID": "60afdafdef14de0d0847b405",
+          "type": "block",
+          "coords": [
+            2825.8463599294614,
+            804.979764622294
+          ],
+          "data": {
+            "name": "Charge",
+            "color": "blue",
+            "steps": [
+              "60afdafdef14de0d0847b402",
+              "60b8b0864583841e6367fbc0",
+              "60afe2cfb744c3eb01e3ae15"
+            ]
+          }
+        },
+        "60afdb8fef14de0d0847b40c": {
+          "nodeID": "60afdb8fef14de0d0847b40c",
+          "type": "setV2",
+          "data": {
+            "title": "出品者IDとsandboxテストメールアドレスの設定",
+            "sets": [
+              {
+                "type": "value",
+                "variable": "sellerId",
+                "expression": ""
+              },
+              {
+                "type": "value",
+                "variable": "sandboxCustomer",
+                "expression": ""
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60b8c33a4583841e6367fcd7",
+                "id": "60afdb8fef14de0d0847b40e"
+              }
+            ]
+          }
+        },
+        "60afdb8fef14de0d0847b40f": {
+          "nodeID": "60afdb8fef14de0d0847b40f",
+          "type": "block",
+          "coords": [
+            755.59951639967,
+            76.09300493069313
+          ],
+          "data": {
+            "name": "Skill's settings",
+            "color": "blue",
+            "steps": [
+              "60b8a9494583841e6367fb20",
+              "60b0b15fb54bf0f2c9095885",
+              "60afdb8fef14de0d0847b40c",
+              "60b8c33a4583841e6367fcd7"
+            ]
+          }
+        },
+        "60afdd42ef14de0d0847b41a": {
+          "nodeID": "60afdd42ef14de0d0847b41a",
+          "type": "speak",
+          "data": {
+            "randomize": true,
+            "canvasVisibility": "preview",
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "支払いが完了しました。 <break strength=\"strong\" />本を楽しんでくださいね。ありがとうございました！"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60afdd42ef14de0d0847b41d"
+              }
+            ]
+          }
+        },
+        "60afdef7ef14de0d0847b42a": {
+          "nodeID": "60afdef7ef14de0d0847b42a",
+          "type": "code",
+          "data": {
+            "code": "_response = {\n  shouldEndSession: null\n}",
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60afdef7ef14de0d0847b42b"
+              },
+              {
+                "type": "fail",
+                "target": null,
+                "id": "60afdef7ef14de0d0847b42c"
+              }
+            ]
+          }
+        },
+        "60afdf00ef14de0d0847b436": {
+          "nodeID": "60afdf00ef14de0d0847b436",
+          "type": "block",
+          "coords": [
+            1577.3220409781761,
+            1441.946503355128
+          ],
+          "data": {
+            "name": "Thank you",
+            "color": "purple",
+            "steps": [
+              "60afdd42ef14de0d0847b41a"
+            ]
+          }
+        },
+        "60afe2cfb744c3eb01e3ae15": {
+          "nodeID": "60afe2cfb744c3eb01e3ae15",
+          "type": "prompt",
+          "data": {
+            "ports": [],
+            "reprompt": null,
+            "noMatches": {
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "chips": null,
+            "buttons": null
+          }
+        },
+        "60affcfbb744c3eb01e3ae56": {
+          "nodeID": "60affcfbb744c3eb01e3ae56",
+          "type": "ifV2",
+          "data": {
+            "expressions": [
+              {
+                "type": null,
+                "value": [
+                  {
+                    "logicInterface": "variable",
+                    "type": "equals",
+                    "value": [
+                      {
+                        "type": "variable",
+                        "value": "statusCode"
+                      },
+                      {
+                        "type": "value",
+                        "value": "200"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60b8c9d54583841e6367fde6",
+                "id": "60affcfbb744c3eb01e3ae58",
+                "data": {
+                  "color": "#f83f55",
+                  "points": [
+                    {
+                      "point": [
+                        1153.538789971794,
+                        1618.6796790372703
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1278.1565058028766,
+                        1618.6796790372703
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1278.1565058028766,
+                        1737.2444198053995
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1402.7742216339593,
+                        1737.2444198053995
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": true
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "",
+                "target": "60afdf00ef14de0d0847b436",
+                "id": "60affcfbb744c3eb01e3ae59",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        1153.538789971794,
+                        1626.6624200936
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1282.9302710225559,
+                        1626.6624200936
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1282.9302710225559,
+                        1472.9421667990684
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1412.3217520733178,
+                        1472.9421667990684
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": true
+                    }
+                  ],
+                  "color": "#00b76d"
+                }
+              }
+            ]
+          }
+        },
+        "60affcfbb744c3eb01e3ae5a": {
+          "nodeID": "60affcfbb744c3eb01e3ae5a",
+          "type": "block",
+          "coords": [
+            988.5217423002836,
+            1483.7151458746232
+          ],
+          "data": {
+            "name": "Check Status",
+            "color": "blue",
+            "steps": [
+              "60affcfbb744c3eb01e3ae56"
+            ]
+          }
+        },
+        "60affd0fb744c3eb01e3ae66": {
+          "nodeID": "60affd0fb744c3eb01e3ae66",
+          "type": "ifV2",
+          "data": {
+            "expressions": [
+              {
+                "type": null,
+                "name": "",
+                "value": [
+                  {
+                    "logicInterface": "variable",
+                    "type": "equals",
+                    "value": [
+                      {
+                        "type": "variable",
+                        "value": "billingId"
+                      },
+                      {
+                        "type": "value",
+                        "value": "0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": null,
+                "name": "",
+                "value": [
+                  {
+                    "logicInterface": "variable",
+                    "type": "equals",
+                    "value": [
+                      {
+                        "type": "variable",
+                        "value": "statusCode"
+                      },
+                      {
+                        "type": "value",
+                        "value": "200"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60b8b7c24583841e6367fc21",
+                "id": "60affd0fb744c3eb01e3ae67",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        1157.9727509351187,
+                        1051.4574581472948
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1196.7596897027986,
+                        1051.4574581472948
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1196.7596897027986,
+                        1168.710147717611
+                      ],
+                      "toTop": true,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": true
+                    }
+                  ],
+                  "color": "#f83f55"
+                }
+              },
+              {
+                "type": 2,
+                "target": "60b8b7c24583841e6367fc21",
+                "id": "60b8c30d4583841e6367fcd3",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        1157.9727509351187,
+                        942.4802044706023
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1196.7596897027986,
+                        942.4802044706023
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1196.7596897027986,
+                        1168.710147717611
+                      ],
+                      "toTop": true,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": true
+                    }
+                  ],
+                  "color": "#f83f55"
+                }
+              },
+              {
+                "type": "",
+                "target": "60b8b6074583841e6367fc09",
+                "id": "60affd0fb744c3eb01e3ae68",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        1157.9727509351187,
+                        996.4716513001805
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1286.680517503371,
+                        996.4716513001805
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1286.680517503371,
+                        826.9007604201395
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1415.3882840716235,
+                        826.9007604201395
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": true
+                    }
+                  ],
+                  "color": "#00b76d"
+                }
+              }
+            ]
+          }
+        },
+        "60affd0fb744c3eb01e3ae64": {
+          "nodeID": "60affd0fb744c3eb01e3ae64",
+          "type": "block",
+          "coords": [
+            992.9558837151598,
+            799.532760374577
+          ],
+          "data": {
+            "name": "Check Status",
+            "color": "blue",
+            "steps": [
+              "60affd0fb744c3eb01e3ae66"
+            ]
+          }
+        },
+        "60b0b15fb54bf0f2c9095885": {
+          "nodeID": "60b0b15fb54bf0f2c9095885",
+          "type": "user_info",
+          "data": {
+            "infos": [
+              {
+                "type": "payments:autopay_consent",
+                "mapTo": null,
+                "product": null
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60afdb8fef14de0d0847b40c",
+                "id": "60b0b15fb54bf0f2c9095886"
+              },
+              {
+                "type": "fail",
+                "target": "60afdb8fef14de0d0847b40c",
+                "id": "60b0b15fb54bf0f2c9095887"
+              }
+            ]
+          }
+        },
+        "60b892ec4583841e6367f64c": {
+          "nodeID": "60b892ec4583841e6367f64c",
+          "type": "markup_image",
+          "coords": [
+            -865.7905335224364,
+            -863.4572731108742
+          ],
+          "data": {
+            "name": "",
+            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1622708972020-prime-boxes-2.png",
+            "width": 620.9395889293072,
+            "height": 639.1430296471045,
+            "rotate": 0,
+            "blockColor": "standard"
+          }
+        },
+        "60b893214583841e6367f650": {
+          "nodeID": "60b893214583841e6367f650",
+          "type": "markup_image",
+          "coords": [
+            -978.2436325134247,
+            -229.07991979245247
+          ],
+          "data": {
+            "name": "",
+            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1616555606111-resources-1.png",
+            "width": 856.4252583767972,
+            "height": 306.0538116591929,
+            "rotate": 0,
+            "blockColor": "standard"
+          }
+        },
+        "60b893334583841e6367f652": {
+          "nodeID": "60b893334583841e6367f652",
+          "type": "markup_text",
+          "coords": [
+            -966.7010316165636,
+            -135.68530095837167
+          ],
+          "data": {
+            "name": "",
+            "scale": 0.9806053520852677,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Amazon セラーセントラル",
+                    "color": {
+                      "r": 19,
+                      "g": 33,
+                      "b": 68,
+                      "a": 1
+                    },
+                    "underline": false
+                  }
+                ]
+              },
+              {
+                "children": [
+                  {
+                    "text": "",
+                    "color": {
+                      "r": 79,
+                      "g": 158,
+                      "b": 209,
+                      "a": 1
+                    },
+                    "underline": true
+                  },
+                  {
+                    "url": "https://sellercentral.amazon.co.jp/",
+                    "type": "link",
+                    "children": [
+                      {
+                        "text": "https://sellercentral.amazon.co.jp/",
+                        "color": {
+                          "r": 93,
+                          "g": 157,
+                          "b": 245,
+                          "a": 1
+                        },
+                        "underline": true
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 694.7354475628637,
+            "blockColor": "standard"
+          }
+        },
+        "60b895554583841e6367f65a": {
+          "nodeID": "60b895554583841e6367f65a",
+          "type": "markup_text",
+          "coords": [
+            -961.136145227713,
+            -50.656855016239646
+          ],
+          "data": {
+            "name": "",
+            "scale": 1.0000012324358543,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Integrate your Skill with Amazon Pay"
+                  }
+                ]
+              },
+              {
+                "children": [
+                  {
+                    "color": {
+                      "r": 19,
+                      "g": 33,
+                      "b": 68,
+                      "a": 1
+                    },
+                    "text": ""
+                  },
+                  {
+                    "url": "https://developer.amazon.com/ja-JP/docs/alexa/amazon-pay-alexa/integrate-skill-with-amazon-pay-v2.html",
+                    "type": "link",
+                    "children": [
+                      {
+                        "text": "https://developer.amazon.com/ja-JP/docs/alexa/amazon-pay-alexa/integrate-skill-with-amazon-pay-v2.html",
+                        "color": {
+                          "r": 93,
+                          "g": 157,
+                          "b": 245,
+                          "a": 1
+                        },
+                        "underline": true
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 783.8616910173221,
+            "blockColor": "standard"
+          }
+        },
+        "60b8a00d4583841e6367fa82": {
+          "nodeID": "60b8a00d4583841e6367fa82",
+          "type": "markup_image",
+          "coords": [
+            347.22310884275385,
+            -575.7081252709357
+          ],
+          "data": {
+            "name": "",
+            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1616554103974-group-1.png",
+            "width": 714.7122376631778,
+            "height": 396.834484900502,
+            "rotate": 0,
+            "blockColor": "standard"
+          }
+        },
+        "60b8a0184583841e6367fa84": {
+          "nodeID": "60b8a0184583841e6367fa84",
+          "type": "markup_text",
+          "coords": [
+            430.7035618898993,
+            -446.2564753114149
+          ],
+          "data": {
+            "name": "",
+            "scale": 1,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "出品者IDを取得するには以下をクリックしてください。"
+                  }
+                ]
+              },
+              {
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "url": "https://sellercentral-japan.amazon.com/sw/AccountInfo/MerchantToken/step/MerchantToken",
+                    "type": "link",
+                    "children": [
+                      {
+                        "text": "https://sellercentral-japan.amazon.com/sw/AccountInfo/MerchantToken/step/MerchantToken",
+                        "color": {
+                          "r": 93,
+                          "g": 157,
+                          "b": 245,
+                          "a": 1
+                        },
+                        "underline": true
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "children": [
+                  {
+                    "color": {
+                      "r": 19,
+                      "g": 33,
+                      "b": 68,
+                      "a": 1
+                    },
+                    "underline": false,
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 573.6592154738081,
+            "blockColor": "standard"
+          }
+        },
+        "60b8a9494583841e6367fb20": {
+          "nodeID": "60b8a9494583841e6367fb20",
+          "type": "code",
+          "data": {
+            "code": "function uuidv4() {\n  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {\n    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);\n    return v.toString(16);\n  });\n}\nfunction authorizationid() {\n  return 'xxxxxxxx-xxxx'.replace(/[xy]/g, function(c) {\n    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);\n    return v.toString(16);\n  });\n}\nfunction orderid() {\n  return 'BOOK-001-xxxxxx'.replace(/[xy]/g, function(c) {\n    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);\n    return v.toString(16);\n  });\n}\n\ntokenId = uuidv4();\nauthorizationRef = authorizationid();\norderRefId = orderid();\napiAccessToken = _system.apiAccessToken;\napiEndpoint = _system.apiEndpoint;\ndeviceId = _system.device.deviceId;",
+            "ports": [
+              {
+                "type": "",
+                "target": "60b0b15fb54bf0f2c9095885",
+                "id": "60b8a9494583841e6367fb22"
+              },
+              {
+                "type": "fail",
+                "target": "60b0b15fb54bf0f2c9095885",
+                "id": "60b8a9494583841e6367fb23"
+              }
+            ]
+          }
+        },
+        "60b8ade54583841e6367fb87": {
+          "nodeID": "60b8ade54583841e6367fb87",
+          "type": "api",
+          "data": {
+            "url": "https://pay-api.amazon.com/sandbox/v1/buyer/addresses?sellerId={{[sellerId].sellerId}}",
+            "body": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "params": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "method": "GET",
+            "headers": [
+              {
+                "key": "Authorization",
+                "val": "Bearer {{[apiAccessToken].apiAccessToken}}"
+              },
+              {
+                "key": "x-amz-pay-sandbox-email-id",
+                "val": "{{[sandboxCustomer].sandboxCustomer}}"
+              }
+            ],
+            "content": "",
+            "mappings": [
+              {
+                "path": "response",
+                "var": "debug"
+              }
+            ],
+            "bodyType": "formData",
+            "selectedAction": "Make a GET Request",
+            "selectedIntegration": "Custom API",
+            "ports": [
+              {
+                "type": "",
+                "target": "60b8afbb4583841e6367fbac",
+                "id": "60b8ade54583841e6367fb89"
+              },
+              {
+                "type": "fail",
+                "target": "60b8afbb4583841e6367fbac",
+                "id": "60b8ade54583841e6367fb8a"
+              }
+            ]
+          }
+        },
+        "60b8ade54583841e6367fb8b": {
+          "nodeID": "60b8ade54583841e6367fb8b",
+          "type": "block",
+          "coords": [
+            -950.6106740847616,
+            611.3982966850656
+          ],
+          "data": {
+            "name": "Amazon Pay API Debug",
+            "color": "standard",
+            "steps": [
+              "60b8ade54583841e6367fb87",
+              "60b8afbb4583841e6367fbac",
+              "60b8af8e4583841e6367fba0"
+            ]
+          }
+        },
+        "60b8af8e4583841e6367fba0": {
+          "nodeID": "60b8af8e4583841e6367fba0",
+          "type": "speak",
+          "data": {
+            "randomize": true,
+            "canvasVisibility": "preview",
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "{{[debug].debug}} "
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60b8af8e4583841e6367fba2"
+              }
+            ]
+          }
+        },
+        "60b8afbb4583841e6367fbac": {
+          "nodeID": "60b8afbb4583841e6367fbac",
+          "type": "code",
+          "data": {
+            "code": "debug = JSON.stringify(debug);",
+            "ports": [
+              {
+                "type": "",
+                "target": "60b8af8e4583841e6367fba0",
+                "id": "60b8afbb4583841e6367fbaf"
+              },
+              {
+                "type": "fail",
+                "target": "60b8af8e4583841e6367fba0",
+                "id": "60b8afbb4583841e6367fbb0"
+              }
+            ]
+          }
+        },
+        "60b8b07e4583841e6367fbb3": {
+          "nodeID": "60b8b07e4583841e6367fbb3",
+          "type": "block",
+          "coords": [
+            338.73874576643504,
+            1199.2865289470337
+          ],
+          "data": {
+            "name": "Keep Session Open",
+            "color": "blue",
+            "steps": [
+              "60afdef7ef14de0d0847b42a"
+            ]
+          }
+        },
+        "60b8b0864583841e6367fbc0": {
+          "nodeID": "60b8b0864583841e6367fbc0",
+          "type": "code",
+          "data": {
+            "code": "_response = {\n  shouldEndSession: null\n}",
+            "ports": [
+              {
+                "type": "",
+                "target": "60afe2cfb744c3eb01e3ae15",
+                "id": "60b8b0864583841e6367fbc1"
+              },
+              {
+                "type": "fail",
+                "target": "60afe2cfb744c3eb01e3ae15",
+                "id": "60b8b0864583841e6367fbc2"
+              }
+            ]
+          }
+        },
+        "60b8b19d4583841e6367fbd2": {
+          "nodeID": "60b8b19d4583841e6367fbd2",
+          "type": "api",
+          "data": {
+            "url": "https://pay-api.amazon.com/sandbox/v1/buyer/addresses?sellerId={{[sellerId].sellerId}}",
+            "body": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "params": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "method": "GET",
+            "headers": [
+              {
+                "key": "Authorization",
+                "val": "Bearer {{[apiAccessToken].apiAccessToken}}"
+              },
+              {
+                "key": "x-amz-pay-sandbox-email-id",
+                "val": "{{[sandboxCustomer].sandboxCustomer}}"
+              }
+            ],
+            "content": "",
+            "mappings": [
+              {
+                "path": "response.addresses",
+                "var": "addresses"
+              }
+            ],
+            "bodyType": "formData",
+            "selectedAction": "Make a GET Request",
+            "selectedIntegration": "Custom API",
+            "ports": [
+              {
+                "type": "",
+                "target": "60b8b1c94583841e6367fbdb",
+                "id": "60b8b19d4583841e6367fbd3"
+              },
+              {
+                "type": "fail",
+                "target": "60b8b1c94583841e6367fbdb",
+                "id": "60b8b19d4583841e6367fbd4"
+              }
+            ]
+          }
+        },
+        "60b8b19d4583841e6367fbd0": {
+          "nodeID": "60b8b19d4583841e6367fbd0",
+          "type": "block",
+          "coords": [
+            -1305.8106825788575,
+            611.394787833829
+          ],
+          "data": {
+            "name": "Amazon Pay API",
+            "color": "standard",
+            "steps": [
+              "60b8b19d4583841e6367fbd2",
+              "60b8b1c94583841e6367fbdb"
+            ]
+          }
+        },
+        "60b8b1c94583841e6367fbdb": {
+          "nodeID": "60b8b1c94583841e6367fbdb",
+          "type": "code",
+          "data": {
+            "code": "addressLine1 = addresses[0].address.addressLine1;\ncity = addresses[0].address.city;\ncountryCode = addresses[0].address.countryCode;\nname = addresses[0].address.name;\nphone = addresses[0].address.phone;\npostalCode = addresses[0].address.postalCode;\nstateOrRegion = addresses[0].address.stateOrRegion;",
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60b8b1c94583841e6367fbdd"
+              },
+              {
+                "type": "fail",
+                "target": null,
+                "id": "60b8b1c94583841e6367fbde"
+              }
+            ]
+          }
+        },
+        "60b8b1da4583841e6367fbe8": {
+          "nodeID": "60b8b1da4583841e6367fbe8",
+          "type": "speak",
+          "data": {
+            "randomize": true,
+            "canvasVisibility": "preview",
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "本の送付先は、{{[postalCode].postalCode}} {{[city].city}} {{[addressLine1].addressLine1}} {{[name].name}} 、でよろしいですか？"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60b8c3f54583841e6367fce5",
+                "id": "60b8b1da4583841e6367fbea"
+              }
+            ]
+          }
+        },
+        "60b8b2d94583841e6367fbf4": {
+          "nodeID": "60b8b2d94583841e6367fbf4",
+          "type": "markup_image",
+          "coords": [
+            -977.0547483142101,
+            98.21987421423363
+          ],
+          "data": {
+            "name": "",
+            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1616555606111-resources-1.png",
+            "width": 856.4252583767972,
+            "height": 306.0538116591929,
+            "rotate": 0,
+            "blockColor": "standard"
+          }
+        },
+        "60b8b5ae4583841e6367fc01": {
+          "nodeID": "60b8b5ae4583841e6367fc01",
+          "type": "markup_image",
+          "coords": [
+            1914.7669352784403,
+            -58.01409201598849
+          ],
+          "data": {
+            "name": "",
+            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1622717869351-cleanshot-2021-06-03-at-12.57.23.png",
+            "width": 808,
+            "height": 629,
+            "rotate": 0,
+            "blockColor": "standard"
+          }
+        },
+        "60b8b6074583841e6367fc05": {
+          "nodeID": "60b8b6074583841e6367fc05",
+          "type": "code",
+          "data": {
+            "code": "addressLine1 = data.payload.billingAgreementDetails.destination.addressLine1;\naddressLine2 = data.payload.billingAgreementDetails.destination.addressLine2;\ncity = data.payload.billingAgreementDetails.destination.city;\ncountryCode = data.payload.billingAgreementDetails.destination.countryCode;\nname = data.payload.billingAgreementDetails.destination.name;\nphone = data.payload.billingAgreementDetails.destination.phone;\npostalCode = data.payload.billingAgreementDetails.destination.postalCode;\nstateOrRegion = data.payload.billingAgreementDetails.destination.stateOrRegion;\n\n/*\n{\n\t\t\"type\": \"Connections.Response\",\n\t\t\"requestId\": \"amzn1.echo-api.request.70879255-0264-4f3e-8806-5e2677b5e4cb\",\n\t\t\"timestamp\": \"2021-06-03T10:55:41Z\",\n\t\t\"locale\": \"en-US\",\n\t\t\"status\": {\n\t\t\t\"code\": \"200\",\n\t\t\t\"message\": \"OK\"\n\t\t},\n\t\t\"name\": \"Setup\",\n\t\t\"payload\": {\n\t\t\t\"billingAgreementDetails\": {\n\t\t\t\t\"releaseEnvironment\": \"SANDBOX\",\n\t\t\t\t\"billingAgreementStatus\": \"OPEN\",\n\t\t\t\t\"creationTimestamp\": \"2021-06-03T10:18:12.076Z\",\n\t\t\t\t\"destination\": {\n\t\t\t\t\t\"stateOrRegion\": \"IL\",\n\t\t\t\t\t\"city\": \"Chicago\",\n\t\t\t\t\t\"phone\": \"800-000-0000\",\n\t\t\t\t\t\"countryCode\": \"US\",\n\t\t\t\t\t\"postalCode\": \"60602\",\n\t\t\t\t\t\"name\": \"Susie Smith\",\n\t\t\t\t\t\"addressLine1\": \"10 Ditka Ave\",\n\t\t\t\t\t\"addressLine2\": \"Suite 2500\"\n\t\t\t\t},\n\t\t\t\t\"billingAgreementId\": \"C01-3335907-1078561\",\n\t\t\t\t\"checkoutLanguage\": \"en_US\"\n\t\t\t}\n\t\t},\n\t\t\"token\": \"2f653d0d-5728-4b07-ad5a-b1e215d0068d\"\n}\n*/",
+            "ports": [
+              {
+                "type": "",
+                "target": "60b8b6b44583841e6367fc13",
+                "id": "60b8b6074583841e6367fc07",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        1745.4053849623663,
+                        930.8696582200646
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1804.193370476434,
+                        930.8696582200646
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1804.193370476434,
+                        831.006648469398
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1862.9813559905017,
+                        831.006648469398
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": true
+                    }
+                  ],
+                  "color": "#00b76d"
+                }
+              },
+              {
+                "type": "fail",
+                "target": "60b8b7c24583841e6367fc21",
+                "id": "60b8b6074583841e6367fc08",
+                "data": {
+                  "color": "#f83f55",
+                  "points": [
+                    {
+                      "point": [
+                        1415.3884147062597,
+                        984.9051437229153
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": true,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1388.5740851141086,
+                        984.9051437229153
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1388.5740851141086,
+                        1200.7145725713547
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1361.7597555219577,
+                        1200.7145725713547
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": true,
+                      "allowedToTop": true
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "60b8b6074583841e6367fc09": {
+          "nodeID": "60b8b6074583841e6367fc09",
+          "type": "block",
+          "coords": [
+            1580.3884470096284,
+            795.9051586986886
+          ],
+          "data": {
+            "name": "Billing Info",
+            "color": "blue",
+            "steps": [
+              "60b8b6074583841e6367fc05"
+            ]
+          }
+        },
+        "60b8b6b44583841e6367fc13": {
+          "nodeID": "60b8b6b44583841e6367fc13",
+          "type": "block",
+          "coords": [
+            2027.9815212969954,
+            800.0110159139263
+          ],
+          "data": {
+            "name": "Confirm Shipping Address",
+            "color": "purple",
+            "steps": [
+              "60b8b1da4583841e6367fbe8",
+              "60b8c3f54583841e6367fce5"
+            ]
+          }
+        },
+        "60b8b7c24583841e6367fc1e": {
+          "nodeID": "60b8b7c24583841e6367fc1e",
+          "type": "speak",
+          "data": {
+            "randomize": true,
+            "canvasVisibility": "preview",
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "ごめんなさい、支払情報にアクセスできませんでした。Alexaアプリを開いて、支払情報と権限をチェックしてください。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60b8b7c24583841e6367fc20"
+              }
+            ]
+          }
+        },
+        "60b8b7c24583841e6367fc21": {
+          "nodeID": "60b8b7c24583841e6367fc21",
+          "type": "block",
+          "coords": [
+            1196.7597768070814,
+            1169.7145873914396
+          ],
+          "data": {
+            "name": "No Access",
+            "color": "red",
+            "steps": [
+              "60b8b7c24583841e6367fc1e"
+            ]
+          }
+        },
+        "60b8b9204583841e6367fc3a": {
+          "nodeID": "60b8b9204583841e6367fc3a",
+          "type": "code",
+          "data": {
+            "code": "statusCode = Number(statusCode);",
+            "ports": [
+              {
+                "type": "",
+                "target": "60afda90ef14de0d0847b3f9",
+                "id": "60b8b9204583841e6367fc3d"
+              },
+              {
+                "type": "fail",
+                "target": "60afda90ef14de0d0847b3f9",
+                "id": "60b8b9204583841e6367fc3e"
+              }
+            ]
+          }
+        },
+        "60b8b9a94583841e6367fc42": {
+          "nodeID": "60b8b9a94583841e6367fc42",
+          "type": "speak",
+          "data": {
+            "randomize": true,
+            "canvasVisibility": "preview",
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "わかりました。Alexaアプリを開いて、規定の送付先住所を選択してから、再度スキルを呼び出してくださいね。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60b8b9a94583841e6367fc44"
+              }
+            ]
+          }
+        },
+        "60b8b9a94583841e6367fc45": {
+          "nodeID": "60b8b9a94583841e6367fc45",
+          "type": "block",
+          "coords": [
+            2027.9815212969934,
+            1158.9557205777774
+          ],
+          "data": {
+            "name": "No address",
+            "color": "red",
+            "steps": [
+              "60b8b9a94583841e6367fc42"
+            ]
+          }
+        },
+        "60b8bd484583841e6367fc6b": {
+          "nodeID": "60b8bd484583841e6367fc6b",
+          "type": "markup_image",
+          "coords": [
+            50.41394240413509,
+            -8.801692642672549
+          ],
+          "data": {
+            "name": "",
+            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1619550930349-untitled_artwork-61.png",
+            "width": 125.9615384615384,
+            "height": 125.9615384615384,
+            "rotate": 0.1512959050585119,
+            "blockColor": "standard"
+          }
+        },
+        "60b8bd484583841e6367fc6a": {
+          "nodeID": "60b8bd484583841e6367fc6a",
+          "type": "markup_image",
+          "coords": [
+            -35.107643835512576,
+            -113.24176559026294
+          ],
+          "data": {
+            "name": "",
+            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1619548892231-untitled_artwork-6-2.png",
+            "width": 210.3846153846154,
+            "height": 122.31663685152057,
+            "rotate": 0,
+            "blockColor": "standard"
+          }
+        },
+        "60b8bd7e4583841e6367fc74": {
+          "nodeID": "60b8bd7e4583841e6367fc74",
+          "type": "markup_image",
+          "coords": [
+            -1513.1817858037375,
+            434.3459238636862
+          ],
+          "data": {
+            "name": "",
+            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1616555606111-resources-1.png",
+            "width": 1401.8720124862764,
+            "height": 500.97573452347,
+            "rotate": 0,
+            "blockColor": "standard"
+          }
+        },
+        "60b8bdaa4583841e6367fc78": {
+          "nodeID": "60b8bdaa4583841e6367fc78",
+          "type": "markup_text",
+          "coords": [
+            -634.7011178743512,
+            492.52627269754703
+          ],
+          "data": {
+            "name": "",
+            "scale": 1.7646708390294186,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Amazon Pay API | Billing Addresses",
+                    "color": {
+                      "r": 255,
+                      "g": 255,
+                      "b": 255,
+                      "a": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 357.2720038172858,
+            "blockColor": "standard"
+          }
+        },
+        "60b8be3a4583841e6367fc7c": {
+          "nodeID": "60b8be3a4583841e6367fc7c",
+          "type": "markup_text",
+          "coords": [
+            624.937368705536,
+            -37.74693115344953
+          ],
+          "data": {
+            "name": "",
+            "scale": 2.002696022802323,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Step 1",
+                    "fontWeight": "400",
+                    "color": {
+                      "r": 66,
+                      "g": 120,
+                      "b": 234,
+                      "a": 1
+                    },
+                    "fontFamily": "Arial Black"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 100.31713585513724,
+            "blockColor": "standard"
+          }
+        },
+        "60b8be764583841e6367fc82": {
+          "nodeID": "60b8be764583841e6367fc82",
+          "type": "markup_text",
+          "coords": [
+            631.8196381988,
+            10.838040484903555
+          ],
+          "data": {
+            "name": "",
+            "scale": 1.5207352588791552,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "スキルの設定",
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 1
+                    },
+                    "fontWeight": "400"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 202,
+            "blockColor": "standard"
+          }
+        },
+        "60b8bee24583841e6367fc84": {
+          "nodeID": "60b8bee24583841e6367fc84",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "path",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "AMAZON.YesIntent",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": null,
+            "buttons": null,
+            "ports": [
+              {
+                "type": "",
+                "target": "60b8c0fd4583841e6367fcbd",
+                "id": "60b8bee24583841e6367fc86",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        1033.8398383238475,
+                        378.831484945624
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": true,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1009.8398383238475,
+                        378.831484945624
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1009.8398383238475,
+                        433.42907062482124
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1197.7723859512494,
+                        433.42907062482124
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1197.7723859512494,
+                        457.42907062482124
+                      ],
+                      "toTop": true,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": true
+                    }
+                  ],
+                  "color": "#ffa626"
+                }
+              },
+              {
+                "type": "",
+                "target": "60b8bef44583841e6367fc8f",
+                "id": "60b8bee24583841e6367fc87",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        1363.8399001546995,
+                        323.8314872196035
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1408.092801702559,
+                        323.8314872196035
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1408.092801702559,
+                        105.48611069588463
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1452.3457032504182,
+                        105.48611069588463
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": true
+                    }
+                  ],
+                  "color": "#00b76d"
+                }
+              }
+            ]
+          }
+        },
+        "60b8bef44583841e6367fc8f": {
+          "nodeID": "60b8bef44583841e6367fc8f",
+          "type": "block",
+          "coords": [
+            1617.3456733269356,
+            74.48609565579959
+          ],
+          "data": {
+            "name": "Amazon Pay Setup",
+            "color": "blue",
+            "steps": [
+              "60afcd30838e798cf94ce500",
+              "60afcdb1838e798cf94ce50e",
+              "60afce57838e798cf94ce546"
+            ]
+          }
+        },
+        "60b8bf094583841e6367fca2": {
+          "nodeID": "60b8bf094583841e6367fca2",
+          "type": "speak",
+          "data": {
+            "randomize": true,
+            "canvasVisibility": "preview",
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "新しい書籍「<sub alias=\"ボイスフロー\">Voiceflow</sub>で<sub alias=\"アマゾンペイ\">Amazon Pay</sub>入門」を1000円で購入しますか？"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60b8bee24583841e6367fc84",
+                "id": "60b8bf094583841e6367fca5"
+              }
+            ]
+          }
+        },
+        "60b8bf964583841e6367fcab": {
+          "nodeID": "60b8bf964583841e6367fcab",
+          "type": "markup_text",
+          "coords": [
+            1515.6261700351602,
+            -23.996139861352162
+          ],
+          "data": {
+            "name": "",
+            "scale": 1.5207352588791552,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Amazon Payのセットアップ",
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 1
+                    },
+                    "fontWeight": "400"
+                  }
+                ]
+              },
+              {
+                "children": [
+                  {
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 1
+                    },
+                    "fontWeight": "400",
+                    "text": "（Setup API）"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 293.248734040373,
+            "blockColor": "standard"
+          }
+        },
+        "60b8bf964583841e6367fcaa": {
+          "nodeID": "60b8bf964583841e6367fcaa",
+          "type": "markup_text",
+          "coords": [
+            1488.660604949437,
+            -82.6389911716122
+          ],
+          "data": {
+            "name": "",
+            "scale": 2.002696022802323,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Step 2",
+                    "fontWeight": "400",
+                    "color": {
+                      "r": 66,
+                      "g": 120,
+                      "b": 234,
+                      "a": 1
+                    },
+                    "fontFamily": "Arial Black"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 100.31713585513724,
+            "blockColor": "standard"
+          }
+        },
+        "60b8c0824583841e6367fcb4": {
+          "nodeID": "60b8c0824583841e6367fcb4",
+          "type": "markup_image",
+          "coords": [
+            1401.7618531426576,
+            339.3457163320235
+          ],
+          "data": {
+            "name": "",
+            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1618613326687-pro-tip-top.png",
+            "width": 416.795385689608,
+            "height": 231.15376275314466,
+            "rotate": 0,
+            "blockColor": "standard"
+          }
+        },
+        "60b8c0974583841e6367fcb6": {
+          "nodeID": "60b8c0974583841e6367fcb6",
+          "type": "markup_text",
+          "coords": [
+            1480.1017396960672,
+            416.0046783245383
+          ],
+          "data": {
+            "name": "",
+            "scale": 1.2645922653630894,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Connections.Response で"
+                  },
+                  {
+                    "text": "Setup",
+                    "fontWeight": "700"
+                  },
+                  {
+                    "fontWeight": "400",
+                    "text": "イベントの返りを"
+                  }
+                ],
+                "textAlign": "center"
+              },
+              {
+                "textAlign": "center",
+                "children": [
+                  {
+                    "fontWeight": "400",
+                    "text": "待つ→Step3へ"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 285.0728994065586,
+            "blockColor": "standard"
+          }
+        },
+        "60b8c0fd4583841e6367fcba": {
+          "nodeID": "60b8c0fd4583841e6367fcba",
+          "type": "flow",
+          "data": {
+            "diagramID": "60b900dfa26cd400069259d9",
+            "variableMap": null,
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60b8c0fd4583841e6367fcbc"
+              }
+            ]
+          }
+        },
+        "60b8c0fd4583841e6367fcbd": {
+          "nodeID": "60b8c0fd4583841e6367fcbd",
+          "type": "block",
+          "coords": [
+            1197.7724663847605,
+            458.4291097144148
+          ],
+          "data": {
+            "name": "Exit",
+            "color": "red",
+            "steps": [
+              "60b8c0fd4583841e6367fcba"
+            ]
+          }
+        },
+        "60b8c1564583841e6367fcc5": {
+          "nodeID": "60b8c1564583841e6367fcc5",
+          "type": "markup_image",
+          "coords": [
+            42.55719636176597,
+            507.704910206359
+          ],
+          "data": {
+            "name": "",
+            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1616554103974-group-1.png",
+            "width": 714.7122376631778,
+            "height": 396.834484900502,
+            "rotate": 0,
+            "blockColor": "standard"
+          }
+        },
+        "60b8c1634583841e6367fcc7": {
+          "nodeID": "60b8c1634583841e6367fcc7",
+          "type": "markup_text",
+          "coords": [
+            157.8543092324839,
+            662.3846833131836
+          ],
+          "data": {
+            "name": "",
+            "scale": 1.087231227556331,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Eventステップはスキルに送信されたイベントをキャッチします。これらのイベントをフィルタしてそれぞれのパスに分岐させます。"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 535,
+            "blockColor": "standard"
+          }
+        },
+        "60b8c1af4583841e6367fccb": {
+          "nodeID": "60b8c1af4583841e6367fccb",
+          "type": "markup_text",
+          "coords": [
+            295.4966975523543,
+            548.7684950033648
+          ],
+          "data": {
+            "name": "",
+            "scale": 2.002696022802323,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Step 3 & Step 7",
+                    "fontWeight": "400",
+                    "color": {
+                      "r": 66,
+                      "g": 120,
+                      "b": 234,
+                      "a": 1
+                    },
+                    "fontFamily": "Arial Black"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 199.39952037797505,
+            "blockColor": "standard"
+          }
+        },
+        "60b8c1c34583841e6367fccd": {
+          "nodeID": "60b8c1c34583841e6367fccd",
+          "type": "markup_text",
+          "coords": [
+            269.50332406833223,
+            595.9916175199215
+          ],
+          "data": {
+            "name": "",
+            "scale": 1.5207352588791552,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "イベントをキャッチする",
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 1
+                    },
+                    "fontWeight": "400"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 269.2965578691609,
+            "blockColor": "standard"
+          }
+        },
+        "60b8c27d4583841e6367fcd0": {
+          "nodeID": "60b8c27d4583841e6367fcd0",
+          "type": "markup_text",
+          "coords": [
+            1455.5058792656198,
+            732.1813693820122
+          ],
+          "data": {
+            "name": "",
+            "scale": 1.5207352588791552,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 1
+                    },
+                    "fontWeight": "400",
+                    "text": "支払情報を取得"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 202,
+            "blockColor": "standard"
+          }
+        },
+        "60b8c27d4583841e6367fccf": {
+          "nodeID": "60b8c27d4583841e6367fccf",
+          "type": "markup_text",
+          "coords": [
+            1450.676789012206,
+            689.7559354632101
+          ],
+          "data": {
+            "name": "",
+            "scale": 2.002696022802323,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Step 4",
+                    "fontWeight": "400",
+                    "color": {
+                      "r": 66,
+                      "g": 120,
+                      "b": 234,
+                      "a": 1
+                    },
+                    "fontFamily": "Arial Black"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 100.31713585513724,
+            "blockColor": "standard"
+          }
+        },
+        "60b8c33a4583841e6367fcd7": {
+          "nodeID": "60b8c33a4583841e6367fcd7",
+          "type": "setV2",
+          "data": {
+            "title": "Billing ID",
+            "sets": [
+              {
+                "type": "value",
+                "variable": "billingId",
+                "expression": "0"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60afcd30838e798cf94ce503",
+                "id": "60b8c33a4583841e6367fcda",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        920.5993165884723,
+                        398.093015327264
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        977.219501527569,
+                        398.093015327264
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        977.219501527569,
+                        106.83147643017179
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1033.8396864666656,
+                        106.83147643017179
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": true
+                    }
+                  ],
+                  "color": "#00b76d"
+                }
+              }
+            ]
+          }
+        },
+        "60b8c3f54583841e6367fce5": {
+          "nodeID": "60b8c3f54583841e6367fce5",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "path",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "AMAZON.YesIntent",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": null,
+            "buttons": null,
+            "ports": [
+              {
+                "type": "",
+                "target": "60b8b9a94583841e6367fc45",
+                "id": "60b8c3f54583841e6367fce6",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        1862.9986735227571,
+                        1102.3762252646995
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": true,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1838.9986735227571,
+                        1102.3762252646995
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1838.9986735227571,
+                        1133.951386843842
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        2027.9813559905017,
+                        1133.951386843842
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        2027.9813559905017,
+                        1157.951386843842
+                      ],
+                      "toTop": true,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": true
+                    }
+                  ],
+                  "color": "#ffa626"
+                }
+              },
+              {
+                "type": "",
+                "target": "60b8c4234583841e6367fcf7",
+                "id": "60b8c3f54583841e6367fce7",
+                "data": {
+                  "color": "#00b76d",
+                  "points": [
+                    {
+                      "point": [
+                        2192.998673522757,
+                        1047.3901568127396
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        2230.2280878102183,
+                        1047.3901568127396
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        2230.2280878102183,
+                        832.6831431214318
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        2267.45750209768,
+                        832.6831431214318
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": true
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "60b8c4234583841e6367fcf4": {
+          "nodeID": "60b8c4234583841e6367fcf4",
+          "type": "speak",
+          "data": {
+            "randomize": true,
+            "canvasVisibility": "preview",
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "わかりました。では支払い処理を行います。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60afdafdef14de0d0847b405",
+                "id": "60b8c4234583841e6367fcf6",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        2597.4577584121303,
+                        965.6875050411244
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        2629.152105423759,
+                        965.6875050411244
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        2629.152105423759,
+                        835.9797209549657
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        2660.846452435388,
+                        835.9797209549657
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": true
+                    }
+                  ],
+                  "color": "#00b76d"
+                }
+              }
+            ]
+          }
+        },
+        "60b8c4234583841e6367fcf7": {
+          "nodeID": "60b8c4234583841e6367fcf7",
+          "type": "block",
+          "coords": [
+            2432.457831547501,
+            801.6874949099418
+          ],
+          "data": {
+            "name": "Ok",
+            "color": "purple",
+            "steps": [
+              "60b8c4234583841e6367fcf4"
+            ]
+          }
+        },
+        "60b8c5524583841e6367fd01": {
+          "nodeID": "60b8c5524583841e6367fd01",
+          "type": "markup_text",
+          "coords": [
+            1944.2365472421416,
+            736.6641774733159
+          ],
+          "data": {
+            "name": "",
+            "scale": 1.74515090670253,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "発送先の確認",
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 1
+                    },
+                    "fontWeight": "400"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 266.56819397309766,
+            "blockColor": "standard"
+          }
+        },
+        "60b8c5524583841e6367fd00": {
+          "nodeID": "60b8c5524583841e6367fd00",
+          "type": "markup_text",
+          "coords": [
+            1891.7828963429854,
+            686.1300348587847
+          ],
+          "data": {
+            "name": "",
+            "scale": 2.002696022802323,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Step 5",
+                    "fontWeight": "400",
+                    "color": {
+                      "r": 66,
+                      "g": 120,
+                      "b": 234,
+                      "a": 1
+                    },
+                    "fontFamily": "Arial Black"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 100.31713585513724,
+            "blockColor": "standard"
+          }
+        },
+        "60b8c9d54583841e6367fde8": {
+          "nodeID": "60b8c9d54583841e6367fde8",
+          "type": "speak",
+          "data": {
+            "randomize": true,
+            "canvasVisibility": "preview",
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "ごめんなさい、支払処理に失敗しました。Alexaアプリを開いて、支払情報をチェックしてください。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60b8c9d54583841e6367fde9"
+              }
+            ]
+          }
+        },
+        "60b8c9d54583841e6367fde6": {
+          "nodeID": "60b8c9d54583841e6367fde6",
+          "type": "block",
+          "coords": [
+            1567.774202846653,
+            1706.2486440057814
+          ],
+          "data": {
+            "name": "No Payment",
+            "color": "red",
+            "steps": [
+              "60b8c9d54583841e6367fde8"
+            ]
+          }
+        },
+        "60b8ca1a4583841e6367fdf1": {
+          "nodeID": "60b8ca1a4583841e6367fdf1",
+          "type": "markup_text",
+          "coords": [
+            2717.9726911144276,
+            711.5736707393008
+          ],
+          "data": {
+            "name": "",
+            "scale": 1.5207352588791552,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "支払処理を行う",
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 1
+                    },
+                    "fontWeight": "400"
+                  }
+                ]
+              },
+              {
+                "children": [
+                  {
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 1
+                    },
+                    "fontWeight": "400",
+                    "text": "（Charge API）"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 266.56819397309766,
+            "blockColor": "standard"
+          }
+        },
+        "60b8ca1a4583841e6367fdf0": {
+          "nodeID": "60b8ca1a4583841e6367fdf0",
+          "type": "markup_text",
+          "coords": [
+            2694.710391519896,
+            652.9308194290408
+          ],
+          "data": {
+            "name": "",
+            "scale": 2.002696022802323,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Step 6",
+                    "fontWeight": "400",
+                    "color": {
+                      "r": 66,
+                      "g": 120,
+                      "b": 234,
+                      "a": 1
+                    },
+                    "fontFamily": "Arial Black"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 100.31713585513724,
+            "blockColor": "standard"
+          }
+        },
+        "60b8caa54583841e6367fdf4": {
+          "nodeID": "60b8caa54583841e6367fdf4",
+          "type": "markup_text",
+          "coords": [
+            2693.2115950084867,
+            1134.2930077408937
+          ],
+          "data": {
+            "name": "",
+            "scale": 1.2645922653630894,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Connections.Response で"
+                  },
+                  {
+                    "text": "Charge",
+                    "fontWeight": "700"
+                  },
+                  {
+                    "fontWeight": "400",
+                    "text": "イベントの返りを"
+                  }
+                ],
+                "textAlign": "center"
+              },
+              {
+                "textAlign": "center",
+                "children": [
+                  {
+                    "fontWeight": "400",
+                    "text": "待つ→Step7へ"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 285.0728994065586,
+            "blockColor": "standard"
+          }
+        },
+        "60b8caab4583841e6367fdf6": {
+          "nodeID": "60b8caab4583841e6367fdf6",
+          "type": "markup_image",
+          "coords": [
+            2613.137604654327,
+            1060.3785551062836
+          ],
+          "data": {
+            "name": "",
+            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1618613326687-pro-tip-top.png",
+            "width": 416.795385689608,
+            "height": 231.15376275314466,
+            "rotate": 0,
+            "blockColor": "standard"
+          }
+        },
+        "60b8cb694583841e6367fdf9": {
+          "nodeID": "60b8cb694583841e6367fdf9",
+          "type": "markup_text",
+          "coords": [
+            1484.702682723933,
+            1380.7486604515423
+          ],
+          "data": {
+            "name": "",
+            "scale": 1.5207352588791552,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "トランザクションの確認",
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 1
+                    },
+                    "fontWeight": "400"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 330.64955160399455,
+            "blockColor": "standard"
+          }
+        },
+        "60b8cb694583841e6367fdf8": {
+          "nodeID": "60b8cb694583841e6367fdf8",
+          "type": "markup_text",
+          "coords": [
+            1446.377413690921,
+            1338.3232265327404
+          ],
+          "data": {
+            "name": "",
+            "scale": 2.002696022802323,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Step 8",
+                    "fontWeight": "400",
+                    "color": {
+                      "r": 66,
+                      "g": 120,
+                      "b": 234,
+                      "a": 1
+                    },
+                    "fontFamily": "Arial Black"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 100.31713585513724,
+            "blockColor": "standard"
+          }
+        },
+        "60b8cc4c4583841e6367fdfc": {
+          "nodeID": "60b8cc4c4583841e6367fdfc",
+          "type": "markup_image",
+          "coords": [
+            3140.3601488073064,
+            735.8751163613981
+          ],
+          "data": {
+            "name": "",
+            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1622723659534-cleanshot-2021-06-03-at-14.34.00.png",
+            "width": 815,
+            "height": 905,
+            "rotate": 0,
+            "blockColor": "standard"
+          }
+        },
+        "60b8cda130a73568eab7bceb": {
+          "nodeID": "60b8cda130a73568eab7bceb",
+          "type": "markup_text",
+          "coords": [
+            690.495666615642,
+            -164.97582807325585
+          ],
+          "data": {
+            "name": "",
+            "scale": 1.087231227556331,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Alexa開発者コンソールやデバイスでスキルのテストを",
+                    "fontWeight": "700"
+                  }
+                ]
+              },
+              {
+                "children": [
+                  {
+                    "fontWeight": "700",
+                    "text": "行うには、出品者IDとSandboxのテスト用アカウント（メールアドレス）の設定が必要です"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 535,
+            "blockColor": "standard"
+          }
+        },
+        "60b8cda130a73568eab7bcea": {
+          "nodeID": "60b8cda130a73568eab7bcea",
+          "type": "markup_image",
+          "coords": [
+            598.1026008223785,
+            -146.25385101788765
+          ],
+          "data": {
+            "name": "",
+            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1612830206049-caution.png",
+            "width": 56.86770754658978,
+            "height": 50.495638836295356,
+            "rotate": 0,
+            "blockColor": "standard"
+          }
+        },
+        "60b8cdb430a73568eab7bcee": {
+          "nodeID": "60b8cdb430a73568eab7bcee",
+          "type": "markup_image",
+          "coords": [
+            539.443458729863,
+            251.47189864758892
+          ],
+          "data": {
+            "name": "",
+            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1612830206049-caution.png",
+            "width": 56.86770754658978,
+            "height": 50.495638836295356,
+            "rotate": 0,
+            "blockColor": "standard"
+          }
+        },
+        "60b8cdbd30a73568eab7bcf0": {
+          "nodeID": "60b8cdbd30a73568eab7bcf0",
+          "type": "markup_image",
+          "coords": [
+            541.4994523571011,
+            309.0397202102578
+          ],
+          "data": {
+            "name": "",
+            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1612830206049-caution.png",
+            "width": 56.86770754658978,
+            "height": 50.495638836295356,
+            "rotate": 0,
+            "blockColor": "standard"
+          }
+        },
+        "60b8cdf030a73568eab7bcf2": {
+          "nodeID": "60b8cdf030a73568eab7bcf2",
+          "type": "markup_text",
+          "coords": [
+            -754.2567124857143,
+            617.4897813407185
+          ],
+          "data": {
+            "name": "",
+            "scale": 1.0000012324358543,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Amazon Pay APIについて詳細はこちら"
+                  },
+                  {
+                    "url": "//{\"$type\":\"voiceflow.com:project.clipboard\",\"$version\":\"(master)\",\"data\":\"U2FsdGVkX1+2GgelbyyX8qN+hprUcurAaiFeB3PjRaYYq7kPwenkWlfmIoPTWOgJ\"}",
+                    "type": "link",
+                    "children": [
+                      {
+                        "text": "",
+                        "color": {
+                          "r": 93,
+                          "g": 157,
+                          "b": 245,
+                          "a": 1
+                        },
+                        "underline": true
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "url": "//{\"$type\":\"voiceflow.com:project.clipboard\",\"$version\":\"(master)\",\"data\":\"U2FsdGVkX1+2GgelbyyX8qN+hprUcurAaiFeB3PjRaYYq7kPwenkWlfmIoPTWOgJ\"}",
+                    "type": "link",
+                    "children": [
+                      {
+                        "color": {
+                          "r": 93,
+                          "g": 157,
+                          "b": 245,
+                          "a": 1
+                        },
+                        "underline": true,
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "url": "https://developer.amazon.com/en-US/docs/alexa/amazon-pay-alexa/amazon-pay-apis-for-alexa.html#buyer-address",
+                    "type": "link",
+                    "children": [
+                      {
+                        "text": "https://developer.amazon.com/ja-JP/docs/alexa/amazon-pay-alexa/amazon-pay-apis-for-alexa.html#buyer-address",
+                        "color": {
+                          "r": 93,
+                          "g": 157,
+                          "b": 245,
+                          "a": 1
+                        },
+                        "underline": true
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 598.7009265905832,
+            "blockColor": "standard"
+          }
+        },
+        "60b8cebf30a73568eab7bcf6": {
+          "nodeID": "60b8cebf30a73568eab7bcf6",
+          "type": "markup_image",
+          "coords": [
+            1829.553950223912,
+            -147.20370747034625
+          ],
+          "data": {
+            "name": "",
+            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1619550930349-untitled_artwork-61.png",
+            "width": 125.9615384615384,
+            "height": 125.9615384615384,
+            "rotate": 0.1512959050585119,
+            "blockColor": "standard"
+          }
+        },
+        "60b8cec330a73568eab7bcf8": {
+          "nodeID": "60b8cec330a73568eab7bcf8",
+          "type": "markup_image",
+          "coords": [
+            3053.174916067585,
+            641.5491186883954
+          ],
+          "data": {
+            "name": "",
+            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1619550930349-untitled_artwork-61.png",
+            "width": 125.9615384615384,
+            "height": 125.9615384615384,
+            "rotate": 0.1512959050585119,
+            "blockColor": "standard"
+          }
+        },
+        "60b8ced930a73568eab7bcfa": {
+          "nodeID": "60b8ced930a73568eab7bcfa",
+          "type": "markup_text",
+          "coords": [
+            1935.392605156998,
+            -192.02010460950046
+          ],
+          "data": {
+            "name": "",
+            "scale": 1.3291230283105788,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Connections.Response Setup",
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 1
+                    },
+                    "fontWeight": "700"
+                  },
+                  {
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 1
+                    },
+                    "fontWeight": "400",
+                    "text": " イベントのサンプル"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 705.2990154098751,
+            "blockColor": "standard"
+          }
+        },
+        "60b8cf1930a73568eab7bcfc": {
+          "nodeID": "60b8cf1930a73568eab7bcfc",
+          "type": "markup_text",
+          "coords": [
+            3147.709341686786,
+            593.1582626953738
+          ],
+          "data": {
+            "name": "",
+            "scale": 1.3291230283105788,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Connections.Response Charge ",
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 1
+                    },
+                    "fontWeight": "700"
+                  },
+                  {
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 1
+                    },
+                    "fontWeight": "400",
+                    "text": "イベントのサンプル"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 582.728034137179,
+            "blockColor": "standard"
+          }
+        },
+        "60b8d17030a73568eab7bd13": {
+          "nodeID": "60b8d17030a73568eab7bd13",
+          "type": "markup_text",
+          "coords": [
+            -959.4681602082076,
+            201.07457403427804
+          ],
+          "data": {
+            "name": "",
+            "scale": 1.0000012324358543,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "AlexaスキルでAmazon Payを実装するためのセラーアカウントの設定チュートリアル",
+                    "underline": false
+                  }
+                ]
+              },
+              {
+                "children": [
+                  {
+                    "text": "",
+                    "color": {
+                      "r": 19,
+                      "g": 33,
+                      "b": 68,
+                      "a": 1
+                    },
+                    "underline": false
+                  },
+                  {
+                    "url": "https://kun432.hatenablog.com/entry/amazon-pay-with-voiceflow",
+                    "type": "link",
+                    "children": [
+                      {
+                        "text": "https://kun432.hatenablog.com/entry/amazon-pay-with-voiceflow",
+                        "color": {
+                          "r": 93,
+                          "g": 157,
+                          "b": 245,
+                          "a": 1
+                        },
+                        "underline": true
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 783.8616910173221,
+            "blockColor": "standard"
+          }
+        },
+        "60b8d22330a73568eab7bddf": {
+          "nodeID": "60b8d22330a73568eab7bddf",
+          "type": "markup_text",
+          "coords": [
+            -581.3120105694035,
+            -204.64318193740405
+          ],
+          "data": {
+            "name": "",
+            "scale": 1.7646708390294186,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Amazon Payのリンク/ドキュメント",
+                    "color": {
+                      "r": 255,
+                      "g": 255,
+                      "b": 255,
+                      "a": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 466.1971173797308,
+            "blockColor": "standard"
+          }
+        },
+        "60b8d22730a73568eab7bde1": {
+          "nodeID": "60b8d22730a73568eab7bde1",
+          "type": "markup_text",
+          "coords": [
+            -265.5746794250596,
+            392.0372522731868
+          ],
+          "data": {
+            "name": "",
+            "scale": 1.7646708390294186,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Voiceflow tutorial",
+                    "color": {
+                      "r": 255,
+                      "g": 255,
+                      "b": 255,
+                      "a": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 196.3615427570676,
+            "blockColor": "standard"
+          }
+        },
+        "60b8d26b30a73568eab7bde3": {
+          "nodeID": "60b8d26b30a73568eab7bde3",
+          "type": "markup_text",
+          "coords": [
+            575.2985460865461,
+            -535.445666644645
+          ],
+          "data": {
+            "name": "",
+            "scale": 1.7646708390294186,
+            "rotate": 0,
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "出品者IDの取得",
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 1
+                    }
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 196.3615427570676,
+            "blockColor": "standard"
+          }
+        }
+      },
+      "children": [
+        "60b900dfa26cd400069259da",
+        "60b900dfa26cd400069259d9"
+      ],
+      "versionID": "60b900dfa26cd400069259d7",
+      "creatorID": 405,
+      "modified": 1624118808
+    }
+  }
+}
