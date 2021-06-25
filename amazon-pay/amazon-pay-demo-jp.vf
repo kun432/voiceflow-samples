@@ -1,10 +1,10 @@
 {
   "_version": "1.0",
   "project": {
-    "_id": "60b900df80da71001c673c3a",
+    "_id": "60d4b8df2c99bc001bc76ad3",
     "name": "ブックストアのデモ",
     "teamID": "4DjZPGaEmb",
-    "devVersion": "60b900dfa26cd400069259d7",
+    "devVersion": "60d4b8df2c99bc001bc76ad4",
     "platform": "alexa",
     "platformData": {
       "products": []
@@ -12,12 +12,13 @@
     "members": [],
     "image": "https://s3.amazonaws.com/com.getstoryflow.api.images/1622712614264-appicon.png",
     "linkType": "STRAIGHT",
-    "creatorID": 405
+    "creatorID": 405,
+    "privacy": "private"
   },
   "version": {
-    "_id": "60b900dfa26cd400069259d7",
-    "name": "Initial Version",
-    "projectID": "60b900df80da71001c673c3a",
+    "_id": "60d4b8df2c99bc001bc76ad4",
+    "name": "version ZL1jC",
+    "projectID": "60d4b8df2c99bc001bc76ad3",
     "variables": [
       "data",
       "statusCode",
@@ -196,12 +197,12 @@
         "stage": "DEV"
       }
     },
-    "rootDiagramID": "60b900dfa26cd400069259d8",
+    "rootDiagramID": "60d4b8df2c99bc001bc76ad7",
     "creatorID": 405
   },
   "diagrams": {
-    "60b900dfa26cd400069259d9": {
-      "_id": "60b900dfa26cd400069259d9",
+    "60d4b8df2c99bc001bc76ad5": {
+      "_id": "60d4b8df2c99bc001bc76ad5",
       "name": "End Session",
       "offsetX": 206.51942553425963,
       "offsetY": 119.61838012311347,
@@ -279,12 +280,12 @@
         }
       },
       "children": [],
-      "versionID": "60b900dfa26cd400069259d7",
+      "versionID": "60d4b8df2c99bc001bc76ad4",
       "creatorID": 405,
-      "modified": 1624110681
+      "modified": 1623598496
     },
-    "60b900dfa26cd400069259da": {
-      "_id": "60b900dfa26cd400069259da",
+    "60d4b8df2c99bc001bc76ad6": {
+      "_id": "60d4b8df2c99bc001bc76ad6",
       "name": "Help User",
       "offsetX": 196.5723910133667,
       "offsetY": 143.32399142840148,
@@ -443,16 +444,16 @@
         }
       },
       "children": [],
-      "versionID": "60b900dfa26cd400069259d7",
+      "versionID": "60d4b8df2c99bc001bc76ad4",
       "creatorID": 405,
-      "modified": 1624110476
+      "modified": 1623598496
     },
-    "60b900dfa26cd400069259d8": {
-      "_id": "60b900dfa26cd400069259d8",
+    "60d4b8df2c99bc001bc76ad7": {
+      "_id": "60d4b8df2c99bc001bc76ad7",
       "name": "ROOT",
-      "offsetX": 1213.5228846211799,
-      "offsetY": 541.4790664277555,
-      "zoom": 76.66209920247395,
+      "offsetX": -466.63156729710715,
+      "offsetY": 200.94456008125394,
+      "zoom": 80,
       "variables": [],
       "nodes": {
         "5f9f562f11b31520c2a2a6de": {
@@ -469,7 +470,51 @@
               {
                 "type": "",
                 "target": "60afdb8fef14de0d0847b40f",
-                "id": "5fde6fac5bc1c56319fad39b"
+                "id": "5fde6fac5bc1c56319fad39b",
+                "data": {
+                  "points": [
+                    {
+                      "point": [
+                        510.1542892113928,
+                        156.56677660065384
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        550.521278347135,
+                        156.56677660065384
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        550.521278347135,
+                        107.38173326569296
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        590.8882674828772,
+                        107.38173326569296
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": true
+                    }
+                  ]
+                }
               }
             ],
             "steps": [
@@ -485,7 +530,7 @@
           "data": {
             "name": "Help",
             "intent": "AMAZON.HelpIntent",
-            "diagramID": "60b900dfa26cd400069259da",
+            "diagramID": "60d4b8df2c99bc001bc76ad6",
             "mappings": [],
             "next": null,
             "ports": []
@@ -497,7 +542,7 @@
           "data": {
             "name": "Stop",
             "intent": "AMAZON.StopIntent",
-            "diagramID": "60b900dfa26cd400069259d9",
+            "diagramID": "60d4b8df2c99bc001bc76ad5",
             "mappings": [],
             "next": null,
             "ports": []
@@ -509,7 +554,7 @@
           "data": {
             "name": "Cancel",
             "intent": "AMAZON.CancelIntent",
-            "diagramID": "60b900dfa26cd400069259d9",
+            "diagramID": "60d4b8df2c99bc001bc76ad5",
             "mappings": [],
             "next": null,
             "ports": []
@@ -537,7 +582,7 @@
             75.83149483031373
           ],
           "data": {
-            "name": "Prompt",
+            "name": "発話",
             "color": "purple",
             "steps": [
               "60afce43838e798cf94ce53f",
@@ -769,7 +814,7 @@
             811.068265901903
           ],
           "data": {
-            "name": "Events",
+            "name": "イベントの受信",
             "color": "green",
             "steps": [
               "60afcdbb838e798cf94ce51b",
@@ -922,8 +967,8 @@
                   "points": [
                     {
                       "point": [
-                        503.1784183969915,
-                        1015.989988818828
+                        503.1784591674804,
+                        1015.9901061058044
                       ],
                       "toTop": false,
                       "locked": false,
@@ -933,7 +978,7 @@
                     {
                       "point": [
                         779.6485434680193,
-                        1015.989988818828
+                        1015.9901061058044
                       ],
                       "toTop": false,
                       "locked": true,
@@ -943,7 +988,7 @@
                     {
                       "point": [
                         779.6485434680193,
-                        830.5285656143473
+                        830.5284361839296
                       ],
                       "toTop": false,
                       "locked": true,
@@ -952,8 +997,8 @@
                     },
                     {
                       "point": [
-                        827.9556500443761,
-                        830.5285656143473
+                        827.9558162689208,
+                        830.5284361839296
                       ],
                       "toTop": false,
                       "locked": false,
@@ -963,8 +1008,8 @@
                   ],
                   "color": "#00b76d",
                   "caption": {
-                    "value": "SETUP",
-                    "width": 53,
+                    "value": "SETUP APIの結果",
+                    "width": 123,
                     "height": 24
                   }
                 }
@@ -977,8 +1022,8 @@
                   "points": [
                     {
                       "point": [
-                        503.1784183969915,
-                        1069.981566450829
+                        503.1614073635714,
+                        1070.0682317831981
                       ],
                       "toTop": false,
                       "locked": false,
@@ -988,7 +1033,7 @@
                     {
                       "point": [
                         779.6485434680193,
-                        1069.981566450829
+                        1070.0682317831981
                       ],
                       "toTop": false,
                       "locked": true,
@@ -1007,7 +1052,7 @@
                     },
                     {
                       "point": [
-                        988.5217095189297,
+                        988.5216978909151,
                         1416.549811028604
                       ],
                       "toTop": false,
@@ -1017,8 +1062,8 @@
                     },
                     {
                       "point": [
-                        988.5217095189297,
-                        1482.7107812373451
+                        988.5216978909151,
+                        1482.7150518515575
                       ],
                       "toTop": true,
                       "locked": false,
@@ -1027,8 +1072,8 @@
                     }
                   ],
                   "caption": {
-                    "value": "CHARGE",
-                    "width": 67,
+                    "value": "CHARGE APIの結果",
+                    "width": 136,
                     "height": 24
                   },
                   "color": "#00b76d"
@@ -1041,7 +1086,7 @@
           "nodeID": "60afdafdef14de0d0847b402",
           "type": "directive",
           "data": {
-            "directive": "{\n            \"type\": \"Connections.SendRequest\",\n            \"name\": \"Charge\",\n            \"payload\": {\n                \"@type\": \"ChargeAmazonPayRequest\",\n                \"@version\": \"2\",\n                \"sellerId\": \"{sellerId}\",\n                \"billingAgreementId\": \"{billingId}\",\n                \"paymentAction\": \"AuthorizeAndCapture\",\n                \"authorizeAttributes\": {\n                    \"@type\": \"AuthorizeAttributes\",\n                    \"@version\": \"2\",\n                    \"authorizationReferenceId\": \"{authorizationRef}\",\n                    \"authorizationAmount\": {\n                        \"@type\": \"Price\",\n                        \"@version\": \"2\",\n                        \"amount\": \"1000\",\n                        \"currencyCode\": \"JPY\"\n                    },\n                    \"transactionTimeout\": 0,\n                    \"sellerAuthorizationNote\": \"Test Seller Authorization Note\"\n                },\n                \"sellerOrderAttributes\": {\n                    \"@type\": \"SellerOrderAttributes\",\n                    \"@version\": \"2\",\n                    \"sellerOrderId\": \"{orderRefId}\",\n                    \"storeName\": \"Voiceflow Store\",\n                    \"customInformation\": \"Test custom information\",\n                    \"sellerNote\": \"Test seller note\"\n                }\n        },\n        \"token\": \"{tokenId}\"\n}",
+            "directive": "{\n            \"type\": \"Connections.SendRequest\",\n            \"name\": \"Charge\",\n            \"payload\": {\n                \"@type\": \"ChargeAmazonPayRequest\",\n                \"@version\": \"2\",\n                \"sellerId\": \"{sellerId}\",\n                \"billingAgreementId\": \"{billingId}\",\n                \"paymentAction\": \"AuthorizeAndCapture\",\n                \"authorizeAttributes\": {\n                    \"@type\": \"AuthorizeAttributes\",\n                    \"@version\": \"2\",\n                    \"authorizationReferenceId\": \"{authorizationRef}\",\n                    \"authorizationAmount\": {\n                        \"@type\": \"Price\",\n                        \"@version\": \"2\",\n                        \"amount\": \"1000\",\n                        \"currencyCode\": \"JPY\"\n                    },\n                    \"transactionTimeout\": 0,\n                    \"sellerAuthorizationNote\": \"購入者へのメモです。\"\n                },\n                \"sellerOrderAttributes\": {\n                    \"@type\": \"SellerOrderAttributes\",\n                    \"@version\": \"2\",\n                    \"sellerOrderId\": \"{orderRefId}\",\n                    \"storeName\": \"デモブックストア\",\n                    \"customInformation\": \"Test custom information\",\n                    \"sellerNote\": \"Test seller note\"\n                }\n        },\n        \"token\": \"{tokenId}\"\n}",
             "ports": [
               {
                 "type": "",
@@ -1059,7 +1104,7 @@
             804.979764622294
           ],
           "data": {
-            "name": "Charge",
+            "name": "支払処理（Charge API）",
             "color": "blue",
             "steps": [
               "60afdafdef14de0d0847b402",
@@ -1072,7 +1117,7 @@
           "nodeID": "60afdb8fef14de0d0847b40c",
           "type": "setV2",
           "data": {
-            "title": "出品者IDとsandboxテストメールアドレスの設定",
+            "title": "出品者ID・テスト用メールアドレスの設定",
             "sets": [
               {
                 "type": "value",
@@ -1102,7 +1147,7 @@
             76.09300493069313
           ],
           "data": {
-            "name": "Skill's settings",
+            "name": "スキルの設定",
             "color": "blue",
             "steps": [
               "60b8a9494583841e6367fb20",
@@ -1160,7 +1205,7 @@
             1441.946503355128
           ],
           "data": {
-            "name": "Thank you",
+            "name": "支払い完了",
             "color": "purple",
             "steps": [
               "60afdd42ef14de0d0847b41a"
@@ -1221,8 +1266,8 @@
                   "points": [
                     {
                       "point": [
-                        1153.538789971794,
-                        1618.6796790372703
+                        1153.5217436672824,
+                        1743.7151205161083
                       ],
                       "toTop": false,
                       "locked": false,
@@ -1231,28 +1276,8 @@
                     },
                     {
                       "point": [
-                        1278.1565058028766,
-                        1618.6796790372703
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        1278.1565058028766,
-                        1737.2444198053995
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": false,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        1402.7742216339593,
-                        1737.2444198053995
+                        1413.289459121384,
+                        1748.8193990805614
                       ],
                       "toTop": false,
                       "locked": false,
@@ -1270,8 +1295,8 @@
                   "points": [
                     {
                       "point": [
-                        1153.538789971794,
-                        1626.6624200936
+                        1153.521732750637,
+                        1688.7151267071788
                       ],
                       "toTop": false,
                       "locked": false,
@@ -1280,8 +1305,8 @@
                     },
                     {
                       "point": [
-                        1282.9302710225559,
-                        1626.6624200936
+                        1282.9218868644066,
+                        1688.7151267071788
                       ],
                       "toTop": false,
                       "locked": false,
@@ -1290,8 +1315,8 @@
                     },
                     {
                       "point": [
-                        1282.9302710225559,
-                        1472.9421667990684
+                        1282.9218868644066,
+                        1472.9466025372567
                       ],
                       "toTop": false,
                       "locked": false,
@@ -1300,8 +1325,8 @@
                     },
                     {
                       "point": [
-                        1412.3217520733178,
-                        1472.9421667990684
+                        1412.322040978176,
+                        1472.9466025372567
                       ],
                       "toTop": false,
                       "locked": false,
@@ -1323,9 +1348,10 @@
             1483.7151458746232
           ],
           "data": {
-            "name": "Check Status",
+            "name": "結果ステータスのチェック",
             "color": "blue",
             "steps": [
+              "60c61f51a72c88f5234ac0dc",
               "60affcfbb744c3eb01e3ae56"
             ]
           }
@@ -1385,8 +1411,8 @@
                   "points": [
                     {
                       "point": [
-                        1157.9727509351187,
-                        1051.4574581472948
+                        1157.9728517532349,
+                        1051.4575543403625
                       ],
                       "toTop": false,
                       "locked": false,
@@ -1395,8 +1421,8 @@
                     },
                     {
                       "point": [
-                        1196.7596897027986,
-                        1051.4574581472948
+                        1196.7597560882568,
+                        1051.4575543403625
                       ],
                       "toTop": false,
                       "locked": false,
@@ -1405,8 +1431,8 @@
                     },
                     {
                       "point": [
-                        1196.7596897027986,
-                        1168.710147717611
+                        1196.7597560882568,
+                        1168.7103924751282
                       ],
                       "toTop": true,
                       "locked": false,
@@ -1425,8 +1451,8 @@
                   "points": [
                     {
                       "point": [
-                        1157.9727509351187,
-                        942.4802044706023
+                        1157.9728517532349,
+                        942.4801983833313
                       ],
                       "toTop": false,
                       "locked": false,
@@ -1435,8 +1461,8 @@
                     },
                     {
                       "point": [
-                        1196.7596897027986,
-                        942.4802044706023
+                        1196.7597560882568,
+                        942.4801983833313
                       ],
                       "toTop": false,
                       "locked": false,
@@ -1445,8 +1471,8 @@
                     },
                     {
                       "point": [
-                        1196.7596897027986,
-                        1168.710147717611
+                        1196.7597560882568,
+                        1168.7103924751282
                       ],
                       "toTop": true,
                       "locked": false,
@@ -1465,8 +1491,8 @@
                   "points": [
                     {
                       "point": [
-                        1157.9727509351187,
-                        996.4716513001805
+                        1157.9728469848633,
+                        996.4717092514038
                       ],
                       "toTop": false,
                       "locked": false,
@@ -1475,8 +1501,8 @@
                     },
                     {
                       "point": [
-                        1286.680517503371,
-                        996.4716513001805
+                        1286.6806478500366,
+                        996.4717092514038
                       ],
                       "toTop": false,
                       "locked": false,
@@ -1485,8 +1511,8 @@
                     },
                     {
                       "point": [
-                        1286.680517503371,
-                        826.9007604201395
+                        1286.6806478500366,
+                        826.9008474349977
                       ],
                       "toTop": false,
                       "locked": false,
@@ -1495,8 +1521,8 @@
                     },
                     {
                       "point": [
-                        1415.3882840716235,
-                        826.9007604201395
+                        1415.38844871521,
+                        826.9008474349977
                       ],
                       "toTop": false,
                       "locked": false,
@@ -1518,7 +1544,7 @@
             799.532760374577
           ],
           "data": {
-            "name": "Check Status",
+            "name": "結果ステータスのチェック",
             "color": "blue",
             "steps": [
               "60affd0fb744c3eb01e3ae66"
@@ -1611,14 +1637,7 @@
               {
                 "children": [
                   {
-                    "text": "",
-                    "color": {
-                      "r": 79,
-                      "g": 158,
-                      "b": 209,
-                      "a": 1
-                    },
-                    "underline": true
+                    "text": ""
                   },
                   {
                     "url": "https://sellercentral.amazon.co.jp/",
@@ -1661,19 +1680,32 @@
               {
                 "children": [
                   {
-                    "text": "Integrate your Skill with Amazon Pay"
+                    "text": "スキルとAmazon Payのインテグレーション"
                   }
                 ]
               },
               {
                 "children": [
                   {
-                    "color": {
-                      "r": 19,
-                      "g": 33,
-                      "b": 68,
-                      "a": 1
-                    },
+                    "text": ""
+                  },
+                  {
+                    "url": "https://developer.amazon.com/en-US/docs/alexa/amazon-pay-alexa/integrate-skill-with-amazon-pay-v2.html",
+                    "type": "link",
+                    "children": [
+                      {
+                        "text": "",
+                        "color": {
+                          "r": 93,
+                          "g": 157,
+                          "b": 245,
+                          "a": 1
+                        },
+                        "underline": true
+                      }
+                    ]
+                  },
+                  {
                     "text": ""
                   },
                   {
@@ -1693,6 +1725,13 @@
                     ]
                   },
                   {
+                    "color": {
+                      "r": 19,
+                      "g": 33,
+                      "b": 68,
+                      "a": 1
+                    },
+                    "underline": false,
                     "text": ""
                   }
                 ]
@@ -1766,20 +1805,6 @@
                     ]
                   },
                   {
-                    "text": ""
-                  }
-                ]
-              },
-              {
-                "children": [
-                  {
-                    "color": {
-                      "r": 19,
-                      "g": 33,
-                      "b": 68,
-                      "a": 1
-                    },
-                    "underline": false,
                     "text": ""
                   }
                 ]
@@ -1925,7 +1950,7 @@
             1199.2865289470337
           ],
           "data": {
-            "name": "Keep Session Open",
+            "name": "セッションを開いたままにする",
             "color": "blue",
             "steps": [
               "60afdef7ef14de0d0847b42a"
@@ -2047,7 +2072,7 @@
             "dialogs": [
               {
                 "voice": "Alexa",
-                "content": "本の送付先は、{{[postalCode].postalCode}} {{[city].city}} {{[addressLine1].addressLine1}} {{[name].name}} 、でよろしいですか？"
+                "content": "本の送付先は、郵便番号<say-as interpret-as=\"digits\">{{[postalCode].postalCode}}</say-as> {{[stateOrRegion].stateOrRegion}} {{[addressLine1].addressLine1}} {{[addressLine2].addressLine2}} {{[name].name}} 、でよろしいですか？"
               }
             ],
             "ports": [
@@ -2075,22 +2100,6 @@
             "blockColor": "standard"
           }
         },
-        "60b8b5ae4583841e6367fc01": {
-          "nodeID": "60b8b5ae4583841e6367fc01",
-          "type": "markup_image",
-          "coords": [
-            1914.7669352784403,
-            -58.01409201598849
-          ],
-          "data": {
-            "name": "",
-            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1622717869351-cleanshot-2021-06-03-at-12.57.23.png",
-            "width": 808,
-            "height": 629,
-            "rotate": 0,
-            "blockColor": "standard"
-          }
-        },
         "60b8b6074583841e6367fc05": {
           "nodeID": "60b8b6074583841e6367fc05",
           "type": "code",
@@ -2105,8 +2114,8 @@
                   "points": [
                     {
                       "point": [
-                        1745.4053849623663,
-                        930.8696582200646
+                        1745.3884121661358,
+                        930.905158064805
                       ],
                       "toTop": false,
                       "locked": false,
@@ -2115,8 +2124,8 @@
                     },
                     {
                       "point": [
-                        1804.193370476434,
-                        930.8696582200646
+                        1804.1849667315655,
+                        930.905158064805
                       ],
                       "toTop": false,
                       "locked": false,
@@ -2125,8 +2134,8 @@
                     },
                     {
                       "point": [
-                        1804.193370476434,
-                        831.006648469398
+                        1804.1849667315655,
+                        831.0109625081645
                       ],
                       "toTop": false,
                       "locked": false,
@@ -2135,8 +2144,8 @@
                     },
                     {
                       "point": [
-                        1862.9813559905017,
-                        831.006648469398
+                        1862.9815212969952,
+                        831.0109625081645
                       ],
                       "toTop": false,
                       "locked": false,
@@ -2208,7 +2217,7 @@
             795.9051586986886
           ],
           "data": {
-            "name": "Billing Info",
+            "name": "支払情報取得",
             "color": "blue",
             "steps": [
               "60b8b6074583841e6367fc05"
@@ -2223,7 +2232,7 @@
             800.0110159139263
           ],
           "data": {
-            "name": "Confirm Shipping Address",
+            "name": "発送先の確認",
             "color": "purple",
             "steps": [
               "60b8b1da4583841e6367fbe8",
@@ -2260,7 +2269,7 @@
             1169.7145873914396
           ],
           "data": {
-            "name": "No Access",
+            "name": "結果ステータスNGの場合",
             "color": "red",
             "steps": [
               "60b8b7c24583841e6367fc1e"
@@ -2295,7 +2304,7 @@
             "dialogs": [
               {
                 "voice": "Alexa",
-                "content": "わかりました。Alexaアプリを開いて、規定の送付先住所を選択してから、再度スキルを呼び出してくださいね。"
+                "content": "わかりました。Alexaアプリを開いて、規定の<sub alias=\"そうふさき\">送付先</sub>住所を選択したあとで、再度スキルを呼び出してくださいね。"
               }
             ],
             "ports": [
@@ -2311,11 +2320,11 @@
           "nodeID": "60b8b9a94583841e6367fc45",
           "type": "block",
           "coords": [
-            2027.9815212969934,
-            1158.9557205777774
+            2420.289213604686,
+            1112.8018744239323
           ],
           "data": {
-            "name": "No address",
+            "name": "確認NG",
             "color": "red",
             "steps": [
               "60b8b9a94583841e6367fc42"
@@ -2496,18 +2505,8 @@
                   "points": [
                     {
                       "point": [
-                        1033.8398383238475,
-                        378.831484945624
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": true,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        1009.8398383238475,
-                        378.831484945624
+                        1363.8398036956787,
+                        378.83146190643316
                       ],
                       "toTop": false,
                       "locked": false,
@@ -2516,8 +2515,8 @@
                     },
                     {
                       "point": [
-                        1009.8398383238475,
-                        433.42907062482124
+                        1387.8398036956787,
+                        378.83146190643316
                       ],
                       "toTop": false,
                       "locked": false,
@@ -2526,8 +2525,8 @@
                     },
                     {
                       "point": [
-                        1197.7723859512494,
-                        433.42907062482124
+                        1387.8398036956787,
+                        442.1752448303137
                       ],
                       "toTop": false,
                       "locked": false,
@@ -2536,8 +2535,18 @@
                     },
                     {
                       "point": [
-                        1197.7723859512494,
-                        457.42907062482124
+                        1276.2340203798753,
+                        442.1752448303137
+                      ],
+                      "toTop": false,
+                      "locked": false,
+                      "reversed": false,
+                      "allowedToTop": false
+                    },
+                    {
+                      "point": [
+                        1276.2340203798753,
+                        468.1983641844531
                       ],
                       "toTop": true,
                       "locked": false,
@@ -2609,7 +2618,7 @@
             74.48609565579959
           ],
           "data": {
-            "name": "Amazon Pay Setup",
+            "name": "Amazon Pay設定（Setup API）",
             "color": "blue",
             "steps": [
               "60afcd30838e798cf94ce500",
@@ -2626,7 +2635,7 @@
             "canvasVisibility": "preview",
             "dialogs": [
               {
-                "voice": "Alexa",
+                "voice": "Mizuki",
                 "content": "新しい書籍「<sub alias=\"ボイスフロー\">Voiceflow</sub>で<sub alias=\"アマゾンペイ\">Amazon Pay</sub>入門」を1000円で購入しますか？"
               }
             ],
@@ -2720,8 +2729,8 @@
           "nodeID": "60b8c0824583841e6367fcb4",
           "type": "markup_image",
           "coords": [
-            1401.7618531426576,
-            339.3457163320235
+            1440.2233916041941,
+            325.4995624858696
           ],
           "data": {
             "name": "",
@@ -2736,8 +2745,8 @@
           "nodeID": "60b8c0974583841e6367fcb6",
           "type": "markup_text",
           "coords": [
-            1480.1017396960672,
-            416.0046783245383
+            1526.2555858499122,
+            409.85083217069223
           ],
           "data": {
             "name": "",
@@ -2778,7 +2787,7 @@
           "nodeID": "60b8c0fd4583841e6367fcba",
           "type": "flow",
           "data": {
-            "diagramID": "60b900dfa26cd400069259d9",
+            "diagramID": "60d4b8df2c99bc001bc76ad5",
             "variableMap": null,
             "ports": [
               {
@@ -2793,8 +2802,8 @@
           "nodeID": "60b8c0fd4583841e6367fcbd",
           "type": "block",
           "coords": [
-            1197.7724663847605,
-            458.4291097144148
+            1276.2340048463009,
+            469.1983404836456
           ],
           "data": {
             "name": "Exit",
@@ -2974,7 +2983,7 @@
           "nodeID": "60b8c33a4583841e6367fcd7",
           "type": "setV2",
           "data": {
-            "title": "Billing ID",
+            "title": "Billing Agreement IDの初期化",
             "sets": [
               {
                 "type": "value",
@@ -3069,18 +3078,8 @@
                   "points": [
                     {
                       "point": [
-                        1862.9986735227571,
-                        1102.3762252646995
-                      ],
-                      "toTop": false,
-                      "locked": false,
-                      "reversed": true,
-                      "allowedToTop": false
-                    },
-                    {
-                      "point": [
-                        1838.9986735227571,
-                        1102.3762252646995
+                        2192.9813980620024,
+                        1125.011013794545
                       ],
                       "toTop": false,
                       "locked": false,
@@ -3089,8 +3088,8 @@
                     },
                     {
                       "point": [
-                        1838.9986735227571,
-                        1133.951386843842
+                        2224.135359243643,
+                        1125.011013794545
                       ],
                       "toTop": false,
                       "locked": false,
@@ -3099,8 +3098,8 @@
                     },
                     {
                       "point": [
-                        2027.9813559905017,
-                        1133.951386843842
+                        2224.135359243643,
+                        1143.801930237416
                       ],
                       "toTop": false,
                       "locked": false,
@@ -3109,10 +3108,10 @@
                     },
                     {
                       "point": [
-                        2027.9813559905017,
-                        1157.951386843842
+                        2255.2893204252837,
+                        1143.801930237416
                       ],
-                      "toTop": true,
+                      "toTop": false,
                       "locked": false,
                       "reversed": false,
                       "allowedToTop": true
@@ -3130,8 +3129,8 @@
                   "points": [
                     {
                       "point": [
-                        2192.998673522757,
-                        1047.3901568127396
+                        2192.9814826705474,
+                        1070.0109888674613
                       ],
                       "toTop": false,
                       "locked": false,
@@ -3140,8 +3139,8 @@
                     },
                     {
                       "point": [
-                        2230.2280878102183,
-                        1047.3901568127396
+                        2230.219657109024,
+                        1070.0109888674613
                       ],
                       "toTop": false,
                       "locked": false,
@@ -3150,8 +3149,8 @@
                     },
                     {
                       "point": [
-                        2230.2280878102183,
-                        832.6831431214318
+                        2230.219657109024,
+                        832.6875177981254
                       ],
                       "toTop": false,
                       "locked": false,
@@ -3160,8 +3159,8 @@
                     },
                     {
                       "point": [
-                        2267.45750209768,
-                        832.6831431214318
+                        2267.4578315475005,
+                        832.6875177981254
                       ],
                       "toTop": false,
                       "locked": false,
@@ -3248,7 +3247,7 @@
             801.6874949099418
           ],
           "data": {
-            "name": "Ok",
+            "name": "確認OK",
             "color": "purple",
             "steps": [
               "60b8c4234583841e6367fcf4"
@@ -3343,11 +3342,11 @@
           "nodeID": "60b8c9d54583841e6367fde6",
           "type": "block",
           "coords": [
-            1567.774202846653,
-            1706.2486440057814
+            1578.289459121384,
+            1717.8192998984325
           ],
           "data": {
-            "name": "No Payment",
+            "name": "支払い失敗",
             "color": "red",
             "steps": [
               "60b8c9d54583841e6367fde8"
@@ -3435,8 +3434,8 @@
           "nodeID": "60b8caa54583841e6367fdf4",
           "type": "markup_text",
           "coords": [
-            2693.2115950084867,
-            1134.2930077408937
+            2689.4615950084867,
+            1144.2930077408937
           ],
           "data": {
             "name": "",
@@ -3493,8 +3492,8 @@
           "nodeID": "60b8cb694583841e6367fdf9",
           "type": "markup_text",
           "coords": [
-            1484.702682723933,
-            1380.7486604515423
+            1485.952682723933,
+            1384.4986604515423
           ],
           "data": {
             "name": "",
@@ -3552,28 +3551,12 @@
             "blockColor": "standard"
           }
         },
-        "60b8cc4c4583841e6367fdfc": {
-          "nodeID": "60b8cc4c4583841e6367fdfc",
-          "type": "markup_image",
-          "coords": [
-            3140.3601488073064,
-            735.8751163613981
-          ],
-          "data": {
-            "name": "",
-            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1622723659534-cleanshot-2021-06-03-at-14.34.00.png",
-            "width": 815,
-            "height": 905,
-            "rotate": 0,
-            "blockColor": "standard"
-          }
-        },
         "60b8cda130a73568eab7bceb": {
           "nodeID": "60b8cda130a73568eab7bceb",
           "type": "markup_text",
           "coords": [
-            690.495666615642,
-            -164.97582807325585
+            695.495666615642,
+            -168.72582807325585
           ],
           "data": {
             "name": "",
@@ -3592,7 +3575,7 @@
                 "children": [
                   {
                     "fontWeight": "700",
-                    "text": "行うには、出品者IDとSandboxのテスト用アカウント（メールアドレス）の設定が必要です"
+                    "text": "行うには、出品者IDとSandboxのテスト用アカウントの設定が必要です"
                   }
                 ]
               }
@@ -3664,7 +3647,7 @@
               {
                 "children": [
                   {
-                    "text": "Amazon Pay APIについて詳細はこちら"
+                    "text": "Amazon Pay API についてより詳細な情報はこちら"
                   },
                   {
                     "url": "//{\"$type\":\"voiceflow.com:project.clipboard\",\"$version\":\"(master)\",\"data\":\"U2FsdGVkX1+2GgelbyyX8qN+hprUcurAaiFeB3PjRaYYq7kPwenkWlfmIoPTWOgJ\"}",
@@ -3712,7 +3695,7 @@
                     "text": ""
                   },
                   {
-                    "url": "https://developer.amazon.com/en-US/docs/alexa/amazon-pay-alexa/amazon-pay-apis-for-alexa.html#buyer-address",
+                    "url": "https://developer.amazon.com/ja-JP/docs/alexa/amazon-pay-alexa/amazon-pay-apis-for-alexa.html#buyer-address",
                     "type": "link",
                     "children": [
                       {
@@ -3741,8 +3724,8 @@
           "nodeID": "60b8cebf30a73568eab7bcf6",
           "type": "markup_image",
           "coords": [
-            1829.553950223912,
-            -147.20370747034625
+            1830.803950223912,
+            -123.45370747034625
           ],
           "data": {
             "name": "",
@@ -3757,8 +3740,8 @@
           "nodeID": "60b8cec330a73568eab7bcf8",
           "type": "markup_image",
           "coords": [
-            3053.174916067585,
-            641.5491186883954
+            2969.424916067585,
+            649.0491186883954
           ],
           "data": {
             "name": "",
@@ -3773,8 +3756,8 @@
           "nodeID": "60b8ced930a73568eab7bcfa",
           "type": "markup_text",
           "coords": [
-            1935.392605156998,
-            -192.02010460950046
+            1936.642605156998,
+            -168.27010460950046
           ],
           "data": {
             "name": "",
@@ -3784,7 +3767,7 @@
               {
                 "children": [
                   {
-                    "text": "Connections.Response Setup",
+                    "text": "Connections.Response Setupイベント",
                     "color": {
                       "r": 0,
                       "g": 0,
@@ -3801,7 +3784,17 @@
                       "a": 1
                     },
                     "fontWeight": "400",
-                    "text": " イベントのサンプル"
+                    "text": "のレスポンスサンプル"
+                  },
+                  {
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 1
+                    },
+                    "fontWeight": "700",
+                    "text": " "
                   }
                 ]
               }
@@ -3814,8 +3807,8 @@
           "nodeID": "60b8cf1930a73568eab7bcfc",
           "type": "markup_text",
           "coords": [
-            3147.709341686786,
-            593.1582626953738
+            3068.1871844025295,
+            600.6582626953738
           ],
           "data": {
             "name": "",
@@ -3825,7 +3818,7 @@
               {
                 "children": [
                   {
-                    "text": "Connections.Response Charge ",
+                    "text": "Connections.Response Chargeイベント",
                     "color": {
                       "r": 0,
                       "g": 0,
@@ -3842,12 +3835,12 @@
                       "a": 1
                     },
                     "fontWeight": "400",
-                    "text": "イベントのサンプル"
+                    "text": "のレスポンスサンプル"
                   }
                 ]
               }
             ],
-            "overrideWidth": 582.728034137179,
+            "overrideWidth": 608.4195983977904,
             "blockColor": "standard"
           }
         },
@@ -3874,28 +3867,21 @@
               {
                 "children": [
                   {
-                    "text": "",
-                    "color": {
-                      "r": 19,
-                      "g": 33,
-                      "b": 68,
-                      "a": 1
-                    },
-                    "underline": false
+                    "text": ""
                   },
                   {
                     "url": "https://kun432.hatenablog.com/entry/amazon-pay-with-voiceflow",
                     "type": "link",
                     "children": [
                       {
+                        "underline": true,
                         "text": "https://kun432.hatenablog.com/entry/amazon-pay-with-voiceflow",
                         "color": {
                           "r": 93,
                           "g": 157,
                           "b": 245,
                           "a": 1
-                        },
-                        "underline": true
+                        }
                       }
                     ]
                   },
@@ -3998,15 +3984,64 @@
             "overrideWidth": 196.3615427570676,
             "blockColor": "standard"
           }
+        },
+        "60c61f51a72c88f5234ac0dc": {
+          "nodeID": "60c61f51a72c88f5234ac0dc",
+          "type": "code",
+          "data": {
+            "code": "data_json = JSON.stringify(data);",
+            "ports": [
+              {
+                "type": "",
+                "target": "60affcfbb744c3eb01e3ae56",
+                "id": "60c61f51a72c88f5234ac0dd"
+              },
+              {
+                "type": "fail",
+                "target": "60affcfbb744c3eb01e3ae56",
+                "id": "60c61f51a72c88f5234ac0de"
+              }
+            ]
+          }
+        },
+        "60d5e85fc5bdf978840b7543": {
+          "nodeID": "60d5e85fc5bdf978840b7543",
+          "type": "markup_image",
+          "coords": [
+            1942.914459121384,
+            -119.05570010156737
+          ],
+          "data": {
+            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1624631389917-s-170.png",
+            "width": 835.3749999999997,
+            "height": 756.3366084425033,
+            "rotate": 0,
+            "blockColor": "standard"
+          }
+        },
+        "60d5e872c5bdf978840b7547": {
+          "nodeID": "60d5e872c5bdf978840b7547",
+          "type": "markup_image",
+          "coords": [
+            3086.914459121384,
+            657.4442998984327
+          ],
+          "data": {
+            "url": "https://s3.amazonaws.com/com.getstoryflow.api.images/1624631409348-s-171.png",
+            "width": 902.6249999999998,
+            "height": 1195.2627881844378,
+            "rotate": 0,
+            "blockColor": "standard"
+          }
         }
       },
       "children": [
-        "60b900dfa26cd400069259da",
-        "60b900dfa26cd400069259d9"
+        "60d4b8df2c99bc001bc76ad6",
+        "60d4b8df2c99bc001bc76ad5"
       ],
-      "versionID": "60b900dfa26cd400069259d7",
+      "versionID": "60d4b8df2c99bc001bc76ad4",
       "creatorID": 405,
-      "modified": 1624118808
+      "modified": 1624631486
     }
   }
 }
